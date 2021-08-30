@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[70],{QeBL:function(n,s,e){"use strict";e.r(s),s["default"]=(n=>{return n.history.push({pathname:"/docs"}),null})}}]);
