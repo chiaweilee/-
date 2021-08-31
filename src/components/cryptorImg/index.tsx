@@ -20,6 +20,7 @@ export default function (props) {
         ).json();
         if (res) {
           setImg(decoder(res));
+          setHidden(false);
         }
       }
     })();
@@ -29,7 +30,7 @@ export default function (props) {
     return null;
   }
 
-  if (!autoload || hidden) {
+  if (hidden) {
     return (
       <img
         {...onTouch({
