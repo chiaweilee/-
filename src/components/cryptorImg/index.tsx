@@ -6,11 +6,11 @@ import { onTouch } from '@/utils/e';
 export default function (props) {
   const [hidden, setHidden] = useState(true);
   const [img, setImg] = useState(undefined);
-  const { src, strict, alt } = props;
+  const { src, strict, alt, autoload } = props;
 
   useEffect(() => {
     (async () => {
-      if (localStorage.getItem(secretKey) && !hidden) {
+      if (localStorage.getItem(secretKey) && (autoload || !hidden)) {
         const res = await (
           await fetch(
             process.env.NODE_ENV === 'development'
