@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { onTouch } from '@/utils/e';
 import useModal from '@/utils/useModal';
 import Modal from '@/components/modal';
 
@@ -24,16 +23,15 @@ export default function ({ src, alt, origin = false }) {
 
   return (
     <img
-      {...props}
-      {...onTouch({
-        onDblClick: () => {
-          modalDestroyer = useModal(
-            <Modal>
-              <img {...props} width="100%" />
-            </Modal>,
-          );
-        },
-      })}
+      src={props.src}
+      alt={props.alt}
+      onClick={() => {
+        modalDestroyer = useModal(
+          <Modal>
+            <img {...props} width="100%" />
+          </Modal>,
+        );
+      }}
     />
   );
 }

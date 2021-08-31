@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Map from './Map';
 import Modal from '@/components/modal';
-import { onTouch } from '@/utils/e';
 import useModal from '@/utils/useModal';
 import styles from './index.less';
 
@@ -59,18 +58,13 @@ const MapComponent = (props: any) => {
       {!fullscreen && mask && (
         <div
           className={styles['map-mask']}
-          {...onTouch({
-            onLongPress: () => {
-              setMask(false);
-            },
-            onDblClick: () => {
-              modalDestroyer = useModal(
-                <Modal>
-                  <MapComponent fullscreen={true} {...props} />
-                </Modal>,
-              );
-            },
-          })}
+          onClick={() => {
+            modalDestroyer = useModal(
+              <Modal>
+                <MapComponent fullscreen={true} {...props} />
+              </Modal>,
+            );
+          }}
         />
       )}
       <Map
