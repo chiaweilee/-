@@ -8,10 +8,8 @@ export default function (props) {
   const [img, setImg] = useState(undefined);
   const { src, strict, alt, autoload } = props;
 
-  useEffect(() => {
-    (async () => {
-      if (localStorage.getItem(secretKey) && (autoload || !hidden)) {
-        const res = await (
+  async function load() {
+    const res = await (
           await fetch(
             process.env.NODE_ENV === 'development'
               ? `../assets/${src}.json`
@@ -20,10 +18,20 @@ export default function (props) {
         ).json();
         if (res) {
           setImg(decoder(res));
-          setHidden(false);
         }
+  }
+
+  useEffect(() => {
+      if (localStorage.getItem(secretKey) && autoload) {
+        load();
+        setHidden(false);
       }
-    })();
+  }, []);
+
+  useEffect(() => {
+      if (localStorage.getItem(secretKey) && !hidden) {
+        load();
+      }
   }, [src, hidden]);
 
   if (!localStorage.getItem(secretKey)) {
