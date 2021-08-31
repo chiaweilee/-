@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Map from './Map';
-import Modal from '@/components/modal';
+import Modal from '@/components/modal/pure';
 import useModal from '@/utils/useModal';
 import styles from './index.less';
 
