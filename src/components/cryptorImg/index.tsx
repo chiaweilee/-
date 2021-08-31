@@ -29,7 +29,7 @@ export default function (props) {
     return null;
   }
 
-  if (hidden) {
+  if (!autoload && hidden) {
     return (
       <img
         {...onTouch({
