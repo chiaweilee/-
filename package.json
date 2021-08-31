@@ -18,7 +18,8 @@
     "antd": "^3.26.20",
     "cryptorjs": "^3.0.0",
     "github-markdown-css": "^3.0.1",
-    "highlight.js": "^9.18.5"
+    "highlight.js": "^9.18.5",
+    "use-pan-zoom": "^3.2.0"
   },
   "devDependencies": {
     "@antv/g2": "^4.1.16",

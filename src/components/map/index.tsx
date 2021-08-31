@@ -60,7 +60,7 @@ const MapComponent = (props: any) => {
           className={styles['map-mask']}
           onClick={() => {
             modalDestroyer = useModal(
-              <Modal>
+              <Modal fullscreen={true}>
                 <MapComponent fullscreen={true} {...props} />
               </Modal>,
             );

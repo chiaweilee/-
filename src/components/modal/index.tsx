@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react';
+import usePanZoom from 'use-pan-zoom';
 import Icon from '@/components/icon';
 import styles from './index.less';
 
 export default function (props: any) {
-  const { children, __unmount__ } = props;
+  const { elemRef, style } = usePanZoom({
+    minScale: 1,
+    bounds: { x: [-Infinity, Infinity], y: [-Infinity, Infinity] },
+  });
+  const { children, __unmount__, fullscreen } = props;
 
   useEffect(() => {
     document.getElementsByTagName('body')[0].style.height = '100%';
@@ -21,7 +26,17 @@ export default function (props: any) {
         <div className={styles['modal-close']}>
           <Icon type={'iconclose'} onClick={__unmount__} />
         </div>
-        {children}
+        <div
+          ref={elemRef}
+          style={{
+            ...(fullscreen ? { width: '100%', height: '100%' } : {}),
+            touchAction: 'none',
+            transformOrigin: '0 0',
+            transform: `translate3d(${style.x}px, ${style.y}px, 0) scale(${style.scale})`,
+          }}
+        >
+          {children}
+        </div>
       </div>
     </div>
   );
