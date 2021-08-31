@@ -7,6 +7,7 @@ export default function (props) {
   const [hidden, setHidden] = useState(true);
   const [img, setImg] = useState(undefined);
   const { src, strict, alt, autoload } = props;
+  const secret = localStorage.getItem(secretKey);
 
   async function load() {
     const res = await (
@@ -22,14 +23,13 @@ export default function (props) {
   }
 
   useEffect(() => {
-      if (localStorage.getItem(secretKey) && autoload) {
-        load();
+      if (secret && autoload) {
         setHidden(false);
       }
   }, []);
 
   useEffect(() => {
-      if (localStorage.getItem(secretKey) && !hidden) {
+      if (secret && !hidden) {
         load();
       }
   }, [src, hidden]);
