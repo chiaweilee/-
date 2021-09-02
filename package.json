@@ -51,7 +51,8 @@
     "tslint-react": "^5.0.0",
     "umi": "^2.13.16",
     "umi-plugin-mdx": "^0.2.6",
-    "umi-plugin-react": "^1.15.8"
+    "umi-plugin-react": "^1.15.8",
+    "webp-loader": "^0.6.0"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
