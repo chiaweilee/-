@@ -1,0 +1,517 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+/* @jsxRuntime classic */
+
+/* @jsx mdx */
+
+const layoutProps = {};
+const MDXLayout = "wrapper";
+export default function MDXContent({
+  components,
+  ...props
+}) {
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: "MDXLayout"
+  }), mdx("h1", null, `计算机原理`), mdx("h2", null, `计算机系统`), mdx("h3", null, `运算器`), mdx("p", null, `运算器主要由`, mdx("em", {
+    parentName: "p"
+  }, `算数逻辑运算部件（ALU）`), `和用来暂存数据的或存放运算结果的一系列寄存器组件`), mdx("h2", null, `二进制、原码、反码、补码`), mdx("h3", null, `原码、反码、补码`), mdx("p", null, `计算原码只要在转化的二进制数前面加上相应的符号位就行了
+原码：转化为二进制数，在最前面添加一符号位，用1表示负数，0表示正数
+0000 0000是一个字节，第一个0为符号位，其它七位表示二进制的值`), mdx("p", null, `当X为正数时，`, `[X]`, mdx("sub", null, `补`), ` = `, `[X]`, mdx("sub", null, `原`), ` = X`), mdx("p", null, `当X为负数时，`, `[X]`, mdx("sub", null, `补`), `等于把`, `[X]`, mdx("sub", null, `原`), `符号位外的各位求反后再末位加"1"，已知`, `[X]`, mdx("sub", null, `补`), `，也可以通过对其除符号位外的各位求反后再末位加"1"求得`, `[X]`, mdx("sub", null, `原`)), mdx("p", null, `[+0]`, `原码=0000 0000 `, `[-0]`, `原码=1000 0000
+`, `[+0]`, `反码=0000 0000 `, `[-0]`, `反码=1111 1111
+`, `[+0]`, `补码=0000 0000 `, `[-0]`, `补码=0000 0000`), mdx("p", null, `[-1]`, `原码=1000 0001
+`, `[-1]`, `反码=1111 1110
+`, `[-1]`, `补码=1111 1111`), mdx("h3", null, `变形补码`), mdx("p", null, `变形补码，即用两个二进制位来表示数字的符号位，其余与补码相同`), mdx("p", null, `用“00”表示正，用“11”表示负`), mdx("p", null, `当运算结果的符号位出现“01”或者“10”时，则表示产生溢出`), mdx("p", null, `变形补码的最高位（第一个符号位）总是表示正确的符号，比如"00"、 “01”分别表示正数、正溢出（上溢），"11"、“10”表示负数、负溢出（下溢）`), mdx("h4", null, `己知二进制数x=-01111，y=+11001，用变形补码（双符号位）计算x-y，同时指出运算结果是否溢出`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `[x]补 = 11 10001   （1 分）
+
+[-y]补 = 11 00111   （1 分）
+
+[x]补       11 10001
+[-y]补     +11 00111
+────────────────
+[x-y]补    =10 11000   （1 分）
+
+符号位的代码为10，表示运算结果发生"负溢"   （1 分）
+`)), mdx("h3", null, `二进制`), mdx("h4", null, `计算机为什么用二进制数？`), mdx("ul", null, mdx("li", {
+    parentName: "ul"
+  }, `容易实现，二进制在技术上最容易实现，可以用任何一个具有两种不同稳定状态的 物理器件来表示两个数码“0”或者“1” 。 （2 分）`), mdx("li", {
+    parentName: "ul"
+  }, `工作可靠。由于采用两种稳定状态来表示数码，因此在采用这类元器件制造的计算 机中，就可以用电平的“高”、“低”或脉冲的“有”、“无”来分别传送和处理数据“1” 和“0”。这种简单工作状态的计算机具有工作可靠、抗干扰能力强的特点。（1 分）`), mdx("li", {
+    parentName: "ul"
+  }, `运算简单。二进制运算规则非常简单，操作实现简便，从而简化了计算机内部运算、 寄存器的线路，提高了机器的运算速度。 （1 分）`), mdx("li", {
+    parentName: "ul"
+  }, `便于逻辑运算与逻辑设计。二进制中的 0 和 1 数字与逻辑代数的 0 和 1 值吻合，所 以计算机可以方便地用二进制数进行逻辑运算与逻辑设计，并且可以使用逻辑代数 这一数学工具对计算机逻辑线路进行分析和综合，便于机器结构的简化。（1 分）`)), mdx("h3", null, `整数：除2取余`), mdx("h4", null, `-27可以用字长为8位的补码表示为：11100101`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `2 │ 27        取余数
+  └───────────     低位
+   2 │ 13       1   ↑
+     └────────     高位
+   2 │ 6        1
+     └────────
+   2 │ 3        0
+     └────────
+   2 │ 1        1
+     └────────
+       0        1
+`)), mdx("p", null, `取补码：10011011 → `, mdx("em", {
+    parentName: "p"
+  }, `11100101`)), mdx("h3", null, `小数：乘2取整`), mdx("h4", null, `14.35转换成二进制数`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `2 │ 14
+  └───────────
+   2 │ 7       1
+     └────────
+   2 │ 3       1
+     └────────
+   2 │ 1       1
+     └────────
+       0       1
+`)), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `    0.35
+  ×    2    取整数
+─────────
+    0.70      0    高位
+  ×    2            ↓
+─────────          低位
+    1.40      1
+  ×    2
+─────────
+    0.80      0
+  ×    2
+─────────
+    1.60      1
+  ×    2
+─────────
+    1.20      1
+`)), mdx("p", null, `(14.35)`, mdx("sub", null, `10`), ` = (1111.01011)`, mdx("sub", null, `2`)), mdx("h2", null, `逻辑计算`), mdx("h3", null, `异或(eor) ⊕`), mdx("p", null, `1真，0假`), mdx("table", null, mdx("thead", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "thead"
+  }, mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `a`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `b`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `a⊕b`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `a·b`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `a+b`))), mdx("tbody", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`)))), mdx("h3", null, `真值表`), mdx("p", null, `用真值表证明下式成立：A+BC=(A+B)(A+C)`), mdx("p", null, `真值表(3分):`), mdx("table", null, mdx("thead", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "thead"
+  }, mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `A`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `B`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `C`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `BC`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `A+BC`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `A+B`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `A+C`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `(A+B)(A+C)`))), mdx("tbody", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `0`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `1`)))), mdx("p", null, `从真值表可知，A+BC=(A+B)(A+C)    (1分)`), mdx("h2", null, `未归类`), mdx("p", null, `硬件乘法器，其基础就是加法器结构，基于“左移位和相加”的算法`));
+}
+;
+MDXContent.isMDXComponent = true;

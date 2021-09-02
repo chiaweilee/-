@@ -1,0 +1,814 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import React from 'react';
+import { mdx } from '@mdx-js/react';
+/* @jsxRuntime classic */
+
+/* @jsx mdx */
+
+const layoutProps = {};
+const MDXLayout = "wrapper";
+export default function MDXContent({
+  components,
+  ...props
+}) {
+  return mdx(MDXLayout, _extends({}, layoutProps, props, {
+    components: components,
+    mdxType: "MDXLayout"
+  }), mdx("h1", null, `Markdown`), mdx("p", null, `A markdown example shows how to write a markdown file. This document integrates core syntax and extensions (GMF).`), mdx("ul", null, mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#block-elements"
+  }), `Block Elements`), mdx("ul", {
+    parentName: "li"
+  }, mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#paragraphs-and-line-breaks"
+  }), `Paragraphs and Line Breaks`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#headers"
+  }), `Headers`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#blockquotes"
+  }), `Blockquotes`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#lists"
+  }), `Lists`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#code-blocks"
+  }), `Code Blocks`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#horizontal-rules"
+  }), `Horizontal Rules`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#table"
+  }), `Table`)))), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#span-elements"
+  }), `Span Elements`), mdx("ul", {
+    parentName: "li"
+  }, mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#links"
+  }), `Links`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#emphasis"
+  }), `Emphasis`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#code"
+  }), `Code`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#images"
+  }), `Images`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#strikethrough"
+  }), `Strikethrough`)))), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#miscellaneous"
+  }), `Miscellaneous`), mdx("ul", {
+    parentName: "li"
+  }, mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#automatic-links"
+  }), `Automatic Links`)), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#backslash-escapes"
+  }), `Backslash Escapes`)))), mdx("li", {
+    parentName: "ul"
+  }, mdx("a", _extends({
+    parentName: "li"
+  }, {
+    "href": "#inline-html"
+  }), `Inline HTML`))), mdx("h2", null, `Block Elements`), mdx("h3", null, `Paragraphs and Line Breaks`), mdx("h4", null, `Paragraphs`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<p>`)), mdx("p", null, `One or more blank lines. (A blank line is a line containing nothing but `, mdx("strong", {
+    parentName: "p"
+  }, `spaces`), ` or `, mdx("strong", {
+    parentName: "p"
+  }, `tabs`), ` is considered blank.)`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `This will be
+inline.
+
+This is second paragraph.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `This will be
+inline.`), mdx("p", null, `This is second paragraph.`), mdx("hr", null), mdx("h4", null, `Line Breaks`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<br />`)), mdx("p", null, `End a line with `, mdx("strong", {
+    parentName: "p"
+  }, `two or more spaces`), `.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `This will be not
+inline.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `This will be not
+inline.`), mdx("hr", null), mdx("h3", null, `Headers`), mdx("p", null, `Markdown supports two styles of headers, Setext and atx.`), mdx("h4", null, `Setext`), mdx("p", null, `HTML Tags: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h1>`), `, `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h2>`)), mdx("p", null, `“Underlined” using `, mdx("strong", {
+    parentName: "p"
+  }, `equal signs (=)`), ` as `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h1>`), ` and `, mdx("strong", {
+    parentName: "p"
+  }, `dashes (-)`), ` as `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h2>`), ` in any number.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `This is an H1
+=============
+This is an H2
+-------------
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("h1", null, `This is an H1`), mdx("h2", null, `This is an H2`), mdx("hr", null), mdx("h4", null, `atx`), mdx("p", null, `HTML Tags: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h1>`), `, `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h2>`), `, `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h3>`), `, `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h4>`), `, `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h5>`), `, `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h6>`)), mdx("p", null, `Uses 1-6 `, mdx("strong", {
+    parentName: "p"
+  }, `hash characters (#)`), ` at the start of the line, corresponding to `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h1>`), ` - `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<h6>`), `.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `# This is an H1
+## This is an H2
+###### This is an H6
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("h1", null, `This is an H1`), mdx("h2", null, `This is an H2`), mdx("h6", null, `This is an H6`), mdx("hr", null), mdx("p", null, `Optionally, you may “close” atx-style headers. The closing hashes `, mdx("strong", {
+    parentName: "p"
+  }, `don’t need to match`), ` the number of hashes used to open the header.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `# This is an H1 #
+## This is an H2 ##
+### This is an H3 ######
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("h1", null, `This is an H1`), mdx("h2", null, `This is an H2`), mdx("h3", null, `This is an H3`), mdx("hr", null), mdx("h3", null, `Blockquotes`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<blockquote>`)), mdx("p", null, `Markdown uses email-style `, mdx("strong", {
+    parentName: "p"
+  }, `>`), ` characters for blockquoting. It looks best if you hard wrap the text and put a > before every line.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+>
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+> id sem consectetuer libero luctus adipiscing.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("blockquote", null, mdx("p", {
+    parentName: "blockquote"
+  }, `This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.`), mdx("p", {
+    parentName: "blockquote"
+  }, `Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.`)), mdx("hr", null), mdx("p", null, `Markdown allows you to be lazy and only put the > before the first line of a hard-wrapped paragraph.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("blockquote", null, mdx("p", {
+    parentName: "blockquote"
+  }, `This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.`)), mdx("blockquote", null, mdx("p", {
+    parentName: "blockquote"
+  }, `Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.`)), mdx("hr", null), mdx("p", null, `Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by adding additional levels of >.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `> This is the first level of quoting.
+>
+> > This is nested blockquote.
+>
+> Back to the first level.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("blockquote", null, mdx("p", {
+    parentName: "blockquote"
+  }, `This is the first level of quoting.`), mdx("blockquote", {
+    parentName: "blockquote"
+  }, mdx("p", {
+    parentName: "blockquote"
+  }, `This is nested blockquote.`)), mdx("p", {
+    parentName: "blockquote"
+  }, `Back to the first level.`)), mdx("hr", null), mdx("p", null, `Blockquotes can contain other Markdown elements, including headers, lists, and code blocks.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `> ## This is a header.
+>
+> 1.   This is the first list item.
+> 2.   This is the second list item.
+>
+> Here's some example code:
+>
+>     return shell_exec("echo $input | $markdown_script");
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("blockquote", null, mdx("h2", {
+    parentName: "blockquote"
+  }, `This is a header.`), mdx("ol", {
+    parentName: "blockquote"
+  }, mdx("li", {
+    parentName: "ol"
+  }, `This is the first list item.`), mdx("li", {
+    parentName: "ol"
+  }, `This is the second list item.`)), mdx("p", {
+    parentName: "blockquote"
+  }, `Here's some example code:`), mdx("pre", {
+    parentName: "blockquote"
+  }, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `return shell_exec("echo $input | $markdown_script");
+`))), mdx("hr", null), mdx("h3", null, `Lists`), mdx("p", null, `Markdown supports ordered (numbered) and unordered (bulleted) lists.`), mdx("h4", null, `Unordered`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<ul>`)), mdx("p", null, `Unordered lists use `, mdx("strong", {
+    parentName: "p"
+  }, `asterisks (`, `*`, `)`), `, `, mdx("strong", {
+    parentName: "p"
+  }, `pluses (+)`), `, and `, mdx("strong", {
+    parentName: "p"
+  }, `hyphens (-)`), `.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `*   Red
+*   Green
+*   Blue
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("ul", null, mdx("li", {
+    parentName: "ul"
+  }, `Red`), mdx("li", {
+    parentName: "ul"
+  }, `Green`), mdx("li", {
+    parentName: "ul"
+  }, `Blue`)), mdx("hr", null), mdx("p", null, `is equivalent to:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `+   Red
++   Green
++   Blue
+`)), mdx("p", null, `and:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `-   Red
+-   Green
+-   Blue
+`)), mdx("h4", null, `Ordered`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<ol>`)), mdx("p", null, `Ordered lists use numbers followed by periods:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `1.  Bird
+2.  McHale
+3.  Parish
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("ol", null, mdx("li", {
+    parentName: "ol"
+  }, `Bird`), mdx("li", {
+    parentName: "ol"
+  }, `McHale`), mdx("li", {
+    parentName: "ol"
+  }, `Parish`)), mdx("hr", null), mdx("p", null, `It’s possible to trigger an ordered list by accident, by writing something like this:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `1986. What a great season.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("ol", {
+    "start": 1986
+  }, mdx("li", {
+    parentName: "ol"
+  }, `What a great season.`)), mdx("hr", null), mdx("p", null, `You can `, mdx("strong", {
+    parentName: "p"
+  }, `backslash-escape (`, `\\`, `)`), ` the period:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `1986\\. What a great season.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `1986`, `.`, ` What a great season.`), mdx("hr", null), mdx("h4", null, `Indented`), mdx("h5", null, `Blockquote`), mdx("p", null, `To put a blockquote within a list item, the blockquote’s > delimiters need to be indented:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `*   A list item with a blockquote:
+
+    > This is a blockquote
+    > inside a list item.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("ul", null, mdx("li", {
+    parentName: "ul"
+  }, mdx("p", {
+    parentName: "li"
+  }, `A list item with a blockquote:`), mdx("blockquote", {
+    parentName: "li"
+  }, mdx("p", {
+    parentName: "blockquote"
+  }, `This is a blockquote
+inside a list item.`)))), mdx("hr", null), mdx("h5", null, `Code Block`), mdx("p", null, `To put a code block within a list item, the code block needs to be indented twice — `, mdx("strong", {
+    parentName: "p"
+  }, `8 spaces`), ` or `, mdx("strong", {
+    parentName: "p"
+  }, `two tabs`), `:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `*   A list item with a code block:
+
+        <code goes here>
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("ul", null, mdx("li", {
+    parentName: "ul"
+  }, mdx("p", {
+    parentName: "li"
+  }, `A list item with a code block:`), mdx("pre", {
+    parentName: "li"
+  }, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `<code goes here>
+`)))), mdx("hr", null), mdx("h5", null, `Nested List`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `* A
+  * A1
+  * A2
+* B
+* C
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("ul", null, mdx("li", {
+    parentName: "ul"
+  }, `A`, mdx("ul", {
+    parentName: "li"
+  }, mdx("li", {
+    parentName: "ul"
+  }, `A1`), mdx("li", {
+    parentName: "ul"
+  }, `A2`))), mdx("li", {
+    parentName: "ul"
+  }, `B`), mdx("li", {
+    parentName: "ul"
+  }, `C`)), mdx("hr", null), mdx("h3", null, `Code Blocks`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<pre>`)), mdx("p", null, `Indent every line of the block by at least `, mdx("strong", {
+    parentName: "p"
+  }, `4 spaces`), ` or `, mdx("strong", {
+    parentName: "p"
+  }, `1 tab`), `.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `This is a normal paragraph:
+
+    This is a code block.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `This is a normal paragraph:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `This is a code block.
+`)), mdx("hr", null), mdx("p", null, `A code block continues until it reaches a line that is not indented (or the end of the article).`), mdx("p", null, `Within a code block, `, mdx("strong", {
+    parentName: "p"
+  }, mdx("em", {
+    parentName: "strong"
+  }, `ampersands (&)`)), ` and angle `, mdx("strong", {
+    parentName: "p"
+  }, `brackets (< and >)`), ` are automatically converted into HTML entities.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `    <div class="footer">
+        &copy; 2004 Foo Corporation
+    </div>
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `<div class="footer">
+    &copy; 2004 Foo Corporation
+</div>
+`)), mdx("hr", null), mdx("p", null, `Following sections Fenced Code Blocks and Syntax Highlighting are extensions, you can use the other way to write the code block.`), mdx("h4", null, `Fenced Code Blocks`), mdx("p", null, `Just wrap your code in `, mdx("inlineCode", {
+    parentName: "p"
+  }, `\`\`\``), ` (as shown below) and you won't need to indent it by four spaces.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `Here's an example:
+
+\`\`\`
+function test() {
+  console.log("notice the blank line before this function?");
+}
+\`\`\`
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `Here's an example:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `function test() {
+  console.log("notice the blank line before this function?");
+}
+`)), mdx("hr", null), mdx("h4", null, `Syntax Highlighting`), mdx("p", null, `In your fenced block, add an optional language identifier and we'll run it through syntax highlighting (`, mdx("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "https://github.com/github/linguist/blob/master/lib/linguist/languages.yml"
+  }), `Support Languages`), `).`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `\`\`\`ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+\`\`\`
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {
+    "className": "language-ruby"
+  }), `require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+`)), mdx("hr", null), mdx("h3", null, `Horizontal Rules`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<hr />`), `
+Places `, mdx("strong", {
+    parentName: "p"
+  }, `three or more hyphens (-), asterisks (`, `*`, `), or underscores (`, `_`, `)`), ` on a line by themselves. You may use spaces between the hyphens or asterisks.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `* * *
+***
+*****
+- - -
+---------------------------------------
+___
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("hr", null), mdx("hr", null), mdx("hr", null), mdx("hr", null), mdx("hr", null), mdx("hr", null), mdx("hr", null), mdx("h3", null, `Table`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<table>`)), mdx("p", null, `It's an extension.`), mdx("p", null, `Separates column by `, mdx("strong", {
+    parentName: "p"
+  }, `pipe (|)`), ` and header by `, mdx("strong", {
+    parentName: "p"
+  }, `dashes (-)`), `, and uses `, mdx("strong", {
+    parentName: "p"
+  }, `colon (:)`), ` for alignment.`), mdx("p", null, `The outer `, mdx("strong", {
+    parentName: "p"
+  }, `pipes (|)`), ` and alignment are optional. There are `, mdx("strong", {
+    parentName: "p"
+  }, `3 delimiters`), ` each cell at least for separating header.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `| Left | Center | Right |
+|:-----|:------:|------:|
+|aaa   |bbb     |ccc    |
+|ddd   |eee     |fff    |
+
+ A | B
+---|---
+123|456
+
+
+A |B
+--|--
+12|45
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("table", null, mdx("thead", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "thead"
+  }, mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": "left"
+  }), `Left`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": "center"
+  }), `Center`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": "right"
+  }), `Right`))), mdx("tbody", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": "left"
+  }), `aaa`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": "center"
+  }), `bbb`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": "right"
+  }), `ccc`)), mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": "left"
+  }), `ddd`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": "center"
+  }), `eee`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": "right"
+  }), `fff`)))), mdx("table", null, mdx("thead", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "thead"
+  }, mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `A`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `B`))), mdx("tbody", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `123`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `456`)))), mdx("table", null, mdx("thead", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "thead"
+  }, mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `A`), mdx("th", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `B`))), mdx("tbody", {
+    parentName: "table"
+  }, mdx("tr", {
+    parentName: "tbody"
+  }, mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `12`), mdx("td", _extends({
+    parentName: "tr"
+  }, {
+    "align": null
+  }), `45`)))), mdx("hr", null), mdx("h2", null, `Span Elements`), mdx("h3", null, `Links`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<a>`)), mdx("p", null, `Markdown supports two style of links: inline and reference.`), mdx("h4", null, `Inline`), mdx("p", null, `Inline link format like this: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `[Link Text](URL "Title")`)), mdx("p", null, `Title is optional.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `This is [an example](http://example.com/ "Title") inline link.
+
+[This link](http://example.net/) has no title attribute.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `This is `, mdx("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "http://example.com/",
+    "title": "Title"
+  }), `an example`), ` inline link.`), mdx("p", null, mdx("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "http://example.net/"
+  }), `This link`), ` has no title attribute.`), mdx("hr", null), mdx("p", null, `If you’re referring to a local resource on the same server, you can use relative paths:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `See my [About](/about/) page for details.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `See my `, mdx("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "/about/"
+  }), `About`), ` page for details.`), mdx("hr", null), mdx("h4", null, `Reference`), mdx("p", null, `You could predefine link references. Format like this: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `[id]: URL "Title"`)), mdx("p", null, `Title is also optional. And the you refer the link, format like this: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `[Link Text][id]`)), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `[id]: http://example.com/  "Optional Title Here"
+This is [an example][id] reference-style link.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `This is `, mdx("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "http://example.com/",
+    "title": "Optional Title Here"
+  }), `an example`), ` reference-style link.`), mdx("hr", null), mdx("p", null, `That is:`), mdx("ul", null, mdx("li", {
+    parentName: "ul"
+  }, `Square brackets containing the link identifier (`, mdx("strong", {
+    parentName: "li"
+  }, `not case sensitive`), `, optionally indented from the left margin using up to three spaces);`), mdx("li", {
+    parentName: "ul"
+  }, `followed by a colon;`), mdx("li", {
+    parentName: "ul"
+  }, `followed by one or more spaces (or tabs);`), mdx("li", {
+    parentName: "ul"
+  }, `followed by the URL for the link;`), mdx("li", {
+    parentName: "ul"
+  }, `The link URL may, optionally, be surrounded by angle brackets.`), mdx("li", {
+    parentName: "ul"
+  }, `optionally followed by a title attribute for the link, enclosed in double or single quotes, or enclosed in parentheses.`)), mdx("p", null, `The following three link definitions are equivalent:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `[foo]: http://example.com/  "Optional Title Here"
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)
+[foo]: <http://example.com/>  "Optional Title Here"
+`)), mdx("p", null, `Uses an empty set of square brackets, the link text itself is used as the name.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `[Google]: http://google.com/
+[Google][]
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, mdx("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "http://google.com/"
+  }), `Google`)), mdx("hr", null), mdx("h3", null, `Emphasis`), mdx("p", null, `HTML Tags: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<em>`), `, `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<strong>`)), mdx("p", null, `Markdown treats `, mdx("strong", {
+    parentName: "p"
+  }, `asterisks (`, `*`, `)`), ` and `, mdx("strong", {
+    parentName: "p"
+  }, `underscores (`, `_`, `)`), ` as indicators of emphasis. `, mdx("strong", {
+    parentName: "p"
+  }, `One delimiter`), ` will be `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<em>`), `; `, `*`, mdx("em", {
+    parentName: "p"
+  }, `double delimiters`), ` will be `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<strong>`), `.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, mdx("em", {
+    parentName: "p"
+  }, `single asterisks`)), mdx("p", null, mdx("em", {
+    parentName: "p"
+  }, `single underscores`)), mdx("p", null, mdx("strong", {
+    parentName: "p"
+  }, `double asterisks`)), mdx("p", null, mdx("strong", {
+    parentName: "p"
+  }, `double underscores`)), mdx("hr", null), mdx("p", null, `But if you surround an `, `*`, ` or `, `_`, ` with spaces, it’ll be treated as a literal asterisk or underscore.`), mdx("p", null, `You can backslash escape it:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `\\*this text is surrounded by literal asterisks\\*
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `*`, `this text is surrounded by literal asterisks`, `*`), mdx("hr", null), mdx("h3", null, `Code`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<code>`)), mdx("p", null, `Wraps it with `, mdx("strong", {
+    parentName: "p"
+  }, `backtick quotes (\`)`), `.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `Use the \`printf()\` function.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `Use the `, mdx("inlineCode", {
+    parentName: "p"
+  }, `printf()`), ` function.`), mdx("hr", null), mdx("p", null, `To include a literal backtick character within a code span, you can use `, mdx("strong", {
+    parentName: "p"
+  }, `multiple backticks`), ` as the opening and closing delimiters:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `\`\`There is a literal backtick (\`) here.\`\`
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, mdx("inlineCode", {
+    parentName: "p"
+  }, `There is a literal backtick (\`) here.`)), mdx("hr", null), mdx("p", null, `The backtick delimiters surrounding a code span may include spaces — one after the opening, one before the closing. This allows you to place literal backtick characters at the beginning or end of a code span:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `A single backtick in a code span: \`\` \` \`\`
+
+A backtick-delimited string in a code span: \`\` \`foo\` \`\`
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `A single backtick in a code span: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `\``)), mdx("p", null, `A backtick-delimited string in a code span: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `\`foo\``)), mdx("hr", null), mdx("h3", null, `Images`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<img />`)), mdx("p", null, `Markdown uses an image syntax that is intended to resemble the syntax for links, allowing for two styles: inline and reference.`), mdx("h4", null, `Inline`), mdx("p", null, `Inline image syntax looks like this: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `![Alt text](URL "Title")`)), mdx("p", null, `Title is optional.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg "Optional title")
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, mdx("img", _extends({
+    parentName: "p"
+  }, {
+    "src": "/path/to/img.jpg",
+    "alt": "Alt text"
+  }))), mdx("p", null, mdx("img", _extends({
+    parentName: "p"
+  }, {
+    "src": "/path/to/img.jpg",
+    "alt": "Alt text",
+    "title": "Optional title"
+  }))), mdx("hr", null), mdx("p", null, `That is:`), mdx("ul", null, mdx("li", {
+    parentName: "ul"
+  }, `An exclamation mark: !;`), mdx("li", {
+    parentName: "ul"
+  }, `followed by a set of square brackets, containing the alt attribute text for the image;`), mdx("li", {
+    parentName: "ul"
+  }, `followed by a set of parentheses, containing the URL or path to the image, and an optional title attribute enclosed in double or single quotes.`)), mdx("h4", null, `Reference`), mdx("p", null, `Reference-style image syntax looks like this: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `![Alt text][id]`)), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `[img id]: url/to/image  "Optional title attribute"
+![Alt text][img id]
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, mdx("img", _extends({
+    parentName: "p"
+  }, {
+    "src": "url/to/image",
+    "alt": "Alt text",
+    "title": "Optional title attribute"
+  }))), mdx("hr", null), mdx("h3", null, `Strikethrough`), mdx("p", null, `HTML Tag: `, mdx("inlineCode", {
+    parentName: "p"
+  }, `<del>`)), mdx("p", null, `It's an extension.`), mdx("p", null, `GFM adds syntax to strikethrough text.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `~~Mistaken text.~~
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, mdx("del", {
+    parentName: "p"
+  }, `Mistaken text.`)), mdx("hr", null), mdx("h2", null, `Miscellaneous`), mdx("h3", null, `Automatic Links`), mdx("p", null, `Markdown supports a shortcut style for creating “automatic” links for URLs and email addresses: simply surround the URL or email address with angle brackets.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `<http://example.com/>
+
+<address@example.com>
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, mdx("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "http://example.com/"
+  }), `http://example.com/`)), mdx("p", null, mdx("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "mailto:address@example.com"
+  }), `address@example.com`)), mdx("hr", null), mdx("p", null, `GFM will autolink standard URLs.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `https://github.com/emn178/markdown
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, mdx("a", _extends({
+    parentName: "p"
+  }, {
+    "href": "https://github.com/emn178/markdown"
+  }), `https://github.com/emn178/markdown`)), mdx("hr", null), mdx("h3", null, `Backslash Escapes`), mdx("p", null, `Markdown allows you to use backslash escapes to generate literal characters which would otherwise have special meaning in Markdown’s formatting syntax.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `\\*literal asterisks\\*
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `*`, `literal asterisks`, `*`), mdx("hr", null), mdx("p", null, `Markdown provides backslash escapes for the following characters:`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `\\   backslash
+\`   backtick
+*   asterisk
+_   underscore
+{}  curly braces
+[]  square brackets
+()  parentheses
+#   hash mark
++   plus sign
+-   minus sign (hyphen)
+.   dot
+!   exclamation mark
+`)), mdx("h2", null, `Inline HTML`), mdx("p", null, `For any markup that is not covered by Markdown’s syntax, you simply use HTML itself. There’s no need to preface it or delimit it to indicate that you’re switching from Markdown to HTML; you just use the tags.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `This is a regular paragraph.
+
+<table>
+    <tr>
+        <td>Foo</td>
+    </tr>
+</table>
+
+This is another regular paragraph.
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("p", null, `This is a regular paragraph.`), mdx("table", null, mdx("tr", null, mdx("td", null, "Foo"))), mdx("p", null, `This is another regular paragraph.`), mdx("hr", null), mdx("p", null, `Note that Markdown formatting syntax is `, mdx("strong", {
+    parentName: "p"
+  }, `not processed within block-level HTML tags`), `.`), mdx("p", null, `Unlike block-level HTML tags, Markdown syntax is `, mdx("strong", {
+    parentName: "p"
+  }, `processed within span-level tags`), `.`), mdx("p", null, `Code:`), mdx("pre", null, mdx("code", _extends({
+    parentName: "pre"
+  }, {}), `<span>**Work**</span>
+
+<div>
+    **No Work**
+</div>
+`)), mdx("p", null, `Preview:`), mdx("hr", null), mdx("span", null, "**Work**"), mdx("div", null, "**No Work**"), "\\*\\*\\*");
+}
+;
+MDXContent.isMDXComponent = true;
