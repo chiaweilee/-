@@ -1,8 +1,9 @@
 import React from 'react';
 
 function ext(filename: string) {
-  if (typeof filename !== 'string') return;
-  return filename.replace(/.(jpe?g|png)$/i, '.webp');
+  if (typeof filename === 'string') {
+    return filename.replace(/.(jpe?g|png)$/i, '.webp');
+  }
 }
 
 interface PictureProps {
