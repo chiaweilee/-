@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[48],{uPfT:function(n,p,o){n.exports=o.p+"static/index.1c2bafbf.mdx"}}]);

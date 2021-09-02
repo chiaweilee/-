@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[52],{KLyg:function(p,n,o){p.exports=o.p+"static/02384.be967742.mdx"}}]);
