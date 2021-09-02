@@ -11,14 +11,6 @@ export default {
   treeShaking: true,
   ignoreMomentLocale: true,
   alias: require('./webpack.config').resolve.alias,
-  urlLoaderExcludes: [/\.(jpe?g|png)$/i],
-  chainWebpack(config) {
-    config.module
-      .rule('webp')
-      .test(/\.(jpe?g|png)$/i)
-      .use('webp-loader')
-      .loader('file-loader');
-  },
   plugins: [
     'umi-plugin-mdx',
     // ref: https://umijs.org/plugin/umi-plugin-react.html
