@@ -5,11 +5,6 @@ import Picture from '@/components/picture';
 
 let modalDestroyer;
 
-function ext(filename: string) {
-  if (typeof filename !== 'string') return;
-  return filename.replace(/.(jpe?g|png)$/i, '.webp');
-}
-
 export default function ({ src, alt, origin = false }) {
   const props = {
     src: origin
