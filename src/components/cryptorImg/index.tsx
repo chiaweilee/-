@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Img from '../img/';
+import Img from '@/components/img/';
+import Picture from '@/components/picture/';
 import { decoder, secretKey } from '@/components/cryptor';
 import { onTouch } from '@/utils/e';
 
@@ -11,27 +12,27 @@ export default function (props) {
 
   async function load() {
     const res = await (
-          await fetch(
-            process.env.NODE_ENV === 'development'
-              ? `../assets/${src}.json`
-              : `/home/assets/${src}.json`,
-          )
-        ).json();
-        if (res) {
-          setImg(decoder(res));
-        }
+      await fetch(
+        process.env.NODE_ENV === 'development'
+          ? `../assets/${src}.json`
+          : `/home/assets/${src}.json`,
+      )
+    ).json();
+    if (res) {
+      setImg(decoder(res));
+    }
   }
 
   useEffect(() => {
-      if (secret && autoload) {
-        setHidden(false);
-      }
+    if (secret && autoload) {
+      setHidden(false);
+    }
   }, []);
 
   useEffect(() => {
-      if (secret && !hidden) {
-        load();
-      }
+    if (secret && !hidden) {
+      load();
+    }
   }, [src, hidden]);
 
   if (!localStorage.getItem(secretKey)) {
@@ -40,7 +41,7 @@ export default function (props) {
 
   if (hidden) {
     return (
-      <img
+      <Picture
         {...onTouch({
           longTouchTimeout: strict ? 30000 : 3000,
           onLongPress: () => {

@@ -4,6 +4,7 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
+    "build:webp": "node ./scripts/webp",
     "test": "umi test",
     "lint": "npm run lint:es && npm run lint:ts && npm run lint:sty",
     "lint-fix": "npm run lint:es-fix && npm run lint:ts-fix && npm run lint:sty-fix",

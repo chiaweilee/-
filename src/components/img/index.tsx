@@ -1,8 +1,14 @@
 import React, { useEffect } from 'react';
 import useModal from '@/utils/useModal';
 import Modal from '@/components/modal';
+import Picture from '@/components/picture';
 
 let modalDestroyer;
+
+function ext(filename: string) {
+  if (typeof filename !== 'string') return;
+  return filename.replace(/.(jpe?g|png)$/i, '.webp');
+}
 
 export default function ({ src, alt, origin = false }) {
   const props = {
@@ -22,13 +28,13 @@ export default function ({ src, alt, origin = false }) {
   }, []);
 
   return (
-    <img
+    <Picture
       src={props.src}
       alt={props.alt}
       onClick={() => {
         modalDestroyer = useModal(
           <Modal>
-            <img {...props} width="100%" />
+            <Picture {...props} width="100%" />
           </Modal>,
         );
       }}
