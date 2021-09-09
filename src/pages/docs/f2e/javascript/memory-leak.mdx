@@ -6,7 +6,7 @@
 
 ### Accidental Global variables
 
-```JavaScript
+```js
 function foo () {
     bar = 'this is a hidden global variables'
 }
@@ -14,7 +14,7 @@ function foo () {
 
 _in fact, it's:_
 
-```JavaScript
+```js
 function foo () {
     window.bar = 'this is a hidden global variables'
 }
@@ -28,7 +28,7 @@ to avoid, add `use strict`
 
 ### Out of DOM references
 
-```JavaScript
+```js
 const elements = {
     button: document.getElementById('button')
 }

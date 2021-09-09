@@ -2,13 +2,13 @@
 
 ### BannerPlugin
 
-```JavaScript
+```js
 new webpack.BannerPlugin(banner);
 // or
 new webpack.BannerPlugin(options);
 ```
 
-```JavaScript
+```js
 {
   banner: string | function, // the banner as string or function, it will be wrapped in a comment
   raw: boolean, // if true, banner will not be wrapped in a comment
@@ -19,7 +19,7 @@ new webpack.BannerPlugin(options);
 }
 ```
 
-```JavaScript
+```js
 // string
 new webpack.BannerPlugin({
   banner: 'hello world'
@@ -33,7 +33,7 @@ new webpack.BannerPlugin({
 
 ### ContextReplacementPlugin
 
-```JavaScript
+```js
 new webpack.ContextReplacementPlugin(
   /moment[/\\]locale$/,
   /de|fr|hu/
@@ -42,7 +42,7 @@ new webpack.ContextReplacementPlugin(
 
 ### DefinePlugin
 
-```JavaScript
+```js
 new webpack.DefinePlugin({
     TWO: '1+1',
     'typeof window': JSON.stringify('object'),
@@ -52,13 +52,13 @@ new webpack.DefinePlugin({
 
 ### EnvironmentPlugin
 
-```JavaScript
+```js
 new webpack.EnvironmentPlugin(['NODE_ENV', 'DEBUG']);
 ```
 
 equivalent to `DefinePlugin`
 
-```JavaScript
+```js
 new webpack.DefinePlugin({
   'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
   'process.env.DEBUG': JSON.stringify(process.env.DEBUG)
@@ -69,11 +69,11 @@ _Variables coming from process.env are always `strings`._
 
 ### IgnorePlugin
 
-```JavaScript
+```js
 new webpack.IgnorePlugin(requestRegExp, [contextRegExp]);
 ```
 
-```JavaScript
+```js
 new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/);
 ```
 
@@ -81,14 +81,14 @@ _...which means "any require statement matching './locale' from any directories 
 
 ### ProvidePlugin
 
-```JavaScript
+```js
 new webpack.ProvidePlugin({
   $: 'jquery',
   jQuery: 'jquery'
 });
 ```
 
-```JavaScript
+```js
 new webpack.ProvidePlugin({
   _map: ['lodash', 'map']
 });

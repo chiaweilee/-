@@ -12,7 +12,7 @@ A `Promise` is in one of these states:
 
 `.then()` and `.catch()` return `promises`, they can be chained.
 
-```JavaScript
+```js
 const promise = new Promise(function (resolve) {
     resolve(100)
 })
@@ -41,7 +41,7 @@ return a promise that either `fulfills` when:
 - `all` promises `fulfilled`
 - or `one` of promises `rejects`
 
-```JavaScript
+```js
 function setTime (time) {
     return new Promise(resolve => {
         setTimeout(() => {
@@ -60,7 +60,7 @@ Promise.all([setTime(1), setTime(100), setTime(200)])
 // result: [1, 100, 200]
 ```
 
-```JavaScript
+```js
 function fail (time) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -88,7 +88,7 @@ return a promise that either `fulfills` when:
 
 - one of promise `fulfilled` or `rejects`
 
-```JavaScript
+```js
 const rabit = new Promise(resolve => {
     setTimeout(() => {
         console.log('rabit race!')
@@ -117,7 +117,7 @@ Promise.race([rabit, turtle])
 
 ### Promise.resolve()
 
-```JavaScript
+```js
 const task1 = value => value + 1
 const task2 = value => value + 2
 const task3 = value => {

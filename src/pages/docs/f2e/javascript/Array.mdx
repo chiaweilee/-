@@ -6,7 +6,7 @@ _not support IE_
 
 create a new, `shallow-copied` Array instance from an array-like or iterable object.
 
-```JavaScript
+```js
 Array.from('foo')
 ```
 
@@ -14,7 +14,7 @@ Array.from('foo')
 // result: ['f', 'o', 'o']
 ```
 
-```JavaScript
+```js
 
 ```
 
@@ -40,7 +40,7 @@ add element(s) at start, and `return new length`
 
 ### prototype.order()
 
-```JavaScript
+```js
 [1, 5, 4, 2, 3, 6].sort((a, b) => a - b)
 [1, 5, 4, 2, 3, 6].sort((a, b) => b - a)
 ```
@@ -56,7 +56,7 @@ e.g: (5, 1) => (4, 5) => (2, 4)
 
 ### Vue Observer array
 
-```JavaScript
+```js
 const arrayProto = Array.prototype
 const arrayMethods = Object.create(arrayProto)
 const method = 'push'

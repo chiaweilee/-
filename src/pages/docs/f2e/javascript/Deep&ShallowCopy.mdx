@@ -6,7 +6,7 @@ Shallow copy is a `bit-wise` copy of an object.
 If any of the fields of the object are references to other objects, just `the reference address are copied`.
 i.e, `only the memory address is copied`.
 
-```JavaScript
+```js
 const A = { c: 1 }
 const B = A // shallow copy
 B.c = 2
@@ -19,11 +19,11 @@ console.log(A.c)
 
 ### Deep Copy
 
-```JavaScript
+```js
 const B = JSON.parse(JSON.stringify(A))
 ```
 
-```JavaScript
+```js
 function deepClone (object) {
     const clonedObject = object.constructor()
     for (let key in object) {

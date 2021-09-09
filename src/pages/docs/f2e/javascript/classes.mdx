@@ -5,7 +5,7 @@ Classes are in fact "special functions", and just as you can define `function ex
 
 ### Class declarations
 
-```JavaScript
+```js
 class Test {
     constructor () {}
 }
@@ -15,21 +15,21 @@ class Test {
 
 `function declarations` are `hoisting` and `class declarations` are not
 
-```JavaScript
+```js
 new Test() // ReferenceError
 class Test {}
 ```
 
 ### Class expressions
 
-```JavaScript
+```js
 const Test = class {}
 const Test = class Test2 {}
 ```
 
 ### Prototype methods
 
-```JavaScript
+```js
 Class Test {
     constructor (h, w) {
         this.h = h

@@ -4,7 +4,7 @@
 
 `Asynchronous` Module Definition (AMD)
 
-```JavaScript
+```js
 // filename: foo.js
 define(['jquery'], function ($) {
   // methods
@@ -14,7 +14,7 @@ define(['jquery'], function ($) {
 });
 ```
 
-```JavaScript
+```js
 //  filename: foo.js
 define(['jquery', 'underscore'], function ($, _) {
   //  methods
@@ -31,7 +31,7 @@ define(['jquery', 'underscore'], function ($, _) {
 
 ### Common JS
 
-```JavaScript
+```js
 //  filename: foo.js
 var $ = require('jquery');
 var _ = require('underscore');
@@ -50,7 +50,7 @@ module.exports = {
 
 `Universal` Module Definition
 
-```JavaScript
+```js
 (function (global, factory) {
   if (typeof export === 'object && typeof module !== 'undefined') {
     // AMD

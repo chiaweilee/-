@@ -4,13 +4,13 @@ usually `60 times per second`, but generally match the display refresh rate as p
 
 callback is passed a single argument, a DOMHighResTimeSteamp, indicates the current time then callbacks queued by `requestAnimationFrame()` begin to fire.
 
-```JavaScript
+```js
 window.requestAnimationFrame(function (timestamp) {})
 ```
 
 ### cancelAnimationFrame
 
-```JavaScript
+```js
 const a = window.requestAnimationFrame(...)
 window.cancleAnimationFrame(a)
 ```
