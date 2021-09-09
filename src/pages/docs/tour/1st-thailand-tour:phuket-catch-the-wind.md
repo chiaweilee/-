@@ -1,6 +1,3 @@
-import Map from '@/components/map';
-import B737 from './b737-pubket-airport.jpg';
-
 ## Catch the Wind
 
 It's the last day I stay in Phuket, it heavy rained in the morning,
@@ -14,18 +11,11 @@ Rain stopped, wind direction changed! When I reached the end of the road.
 I leave the road and step on sand, heading airport along the beach.
 And a flood stream stopped me, my camera will die if I fall into it.
 
-<Map
-  walking={['8.092336,98.301914,Resort', '8.092496,98.299101,.', '8.101805,98.299957,.']}
-  points={['8.111834,98.302161']}
-/>
-
 Finally, I am at the end of runway.
 
 A A380 take off over my head, too late to get my camera.
 I watched my plane radar app and waiting for landing.
 I got some plane photos, include a beautiful B747.
 And the sky just went to warming and shinning.
-
-<img src={B737} />
 
 I did it by perseverance.

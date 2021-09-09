@@ -1,5 +1,3 @@
-import Map from '@/components/map';
-
 ## Unexpected Ride
 
 Early morning of Bangkok, the only time I called tutu driver hotel downstairs riding to Mo Chit Bus Terminal.
@@ -32,11 +30,3 @@ Scouts I saw when I arrived. It should be what he teach I think.
 The truck drive straightly and turn right at the first intersection. Not more than 5 minutes, I am there.
 
 What a nice guy, isn't is? And he's not the only nice guy I met.
-
-<Map
-  driving={[
-    '17.030496,99.702936,Tourist Information Center',
-    '17.032004,99.702915,_',
-    '17.031670,99.706329,Baan Rim Klong Resort',
-  ]}
-/>

@@ -1,3 +1,5 @@
+import render from './src/doc-render';
+
 // ref: https://umijs.org/config/
 export default {
   base: '/home/',
@@ -12,7 +14,12 @@ export default {
   ignoreMomentLocale: true,
   alias: require('./webpack.config').resolve.alias,
   plugins: [
-    'umi-plugin-mdx',
+    [
+      'umi-plugin-md',
+      {
+        render,
+      },
+    ],
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     [
       'umi-plugin-react',

@@ -1,15 +1,4 @@
-import Map from '@/components/map';
-
 ## The Great Escape
-
-<Map
-  driving={[
-    '9.1438932,99.3283169,Surat Thani Transport Station',
-    '8.9006588,98.5198817,Khao Sok Bus Stop',
-    '8.6668406,98.2527142,Khao Lak',
-  ]}
-/>
-<Map points={['8.6558474,97.6437167']} center={'8.584864,97.638397'} zoom={10} />
 
 To catch up with Full Moon Party, I have to travel 541km distance in 18 hours.
 
@@ -36,15 +25,3 @@ Donsak Pier to Koh Phangan by Lomprayah's speed boat.
 #### Day 2, about 12:00
 
 Mini van from Thong Sala Pier to Rin Nai Beach.
-
-<Map
-  driving={[
-    '8.644791,98.251189,Khao Lak Scuba Adventures',
-    '7.917718,98.395462,Phuket Bus Terminal 2',
-    '8.102171,98.907734,Krabi',
-    '8.077127,98.904208,Lomprayah',
-    '9.318253,99.736982,Donsak',
-    '9.709127,99.984432,Thong Sala',
-    '9.671759,100.067371,Rin Nai',
-  ]}
-/>

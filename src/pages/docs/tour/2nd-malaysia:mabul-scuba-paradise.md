@@ -1,5 +1,3 @@
-import Map from '@/components/map';
-
 ## Paradise
 
 Paradise but not Sipadan, located just off shore Mabul Island.
@@ -7,5 +5,3 @@ Minutes away from the Rig, the dive site is made up of artificial house reef whe
 The artificial reef is a collaboration work of resorts within and nearby Mabul.
 
 It named "Paradise 2".
-
-<Map aerial zoom={15} points={['4.250431,118.630882']} />

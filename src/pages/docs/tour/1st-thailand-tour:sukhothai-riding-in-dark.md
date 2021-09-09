@@ -1,5 +1,3 @@
-import Map from '@/components/map';
-
 ## Riding in Dark
 
 After meal, the day just black out. And I can't recognize the way back in the black.
@@ -16,13 +14,5 @@ I met motorbike with a beam headlight riding opposite me that I believe which wi
 So I have to stop my bike beside the road.
 
 At the cross, I saw fireflies, two or three. Not light in the dark, but beautiful.
-
-<Map
-  walking={[
-    '17.020809,99.693417,Store',
-    '17.031913,99.702393,Fireflies',
-    '17.031670,99.706329,Baan Rim Klong Resort',
-  ]}
-/>
 
 2013-10-11

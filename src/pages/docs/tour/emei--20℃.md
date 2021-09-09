@@ -1,4 +1,3 @@
-import Map from '@/components/map';
 
 ## -20℃
 
@@ -16,5 +15,3 @@ I stand there till daybreak.
 The wind is piercing and temperature is under -20.
 
 It's pity to get a shaky photo, it direct impact "The Check List" I used then.
-
-<Map zoom={16} points={['29.520246,103.337843']} center={'29.521189,103.337870'} />

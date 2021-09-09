@@ -1,5 +1,3 @@
-import Map from '@/components/map';
-
 ## Deflate
 
 Flood in thailand. It blow strong wind on the sea. Our boat Manta Queen 1 have limit choice.
@@ -18,5 +16,3 @@ Then a girl who should be on another boat came from nowhere, hanging on the line
 A guy on boat shout to us, and we found out boat is toward us.
 We've been picked up to the deck, and Meng and Sergio is there.
 The girl will be transport to her boat, and we decide to jump again.
-
-<Map points={['9.055560,97.815189']} center={'9.060280,97.812875'} />
