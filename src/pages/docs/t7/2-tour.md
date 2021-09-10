@@ -10,7 +10,9 @@ Sat 04 Jan 2014, 2150 hrs ( 9:50PM)
 
 
 Irsia BnB Guesthouse
-<C.HotelNights date={'2014-1-4'} nights={2} />
+```hotel-nights
+2014-1-4,2
+```
 
 ## KOTA KINABALU 1
 
@@ -115,10 +117,14 @@ Penang International Airport
 Mon 13 Jan 2014, 1605 hrs ( 4:05PM)
 
 Ryokan @ Muntri Street
-<C.HotelNights date={'2014-01-13'} nights={4} />
+```hotel-nights
+2014-01-13,4
+```
 
 Day & Night Guesthouse
-<C.HotelNights date={'2014-01-17'} nights={2} />
+```hotel-nights
+2014-01-17,2
+```
 
 <C.Img src={'gt-1.jpg'} />
 
@@ -189,7 +195,9 @@ Night bar, riding danger
 ## KULA LUMPUR 2
 
 Hotel Budget Inn Jalan Alor
-<C.HotelNights date={'2014-01-19'} nights={2} />
+```hotel-nights
+2014-01-19,2
+```
 
 AK1008 KUL - KMG
 Tue 21 Jan 2014, 1305 hrs ( 1:05PM)

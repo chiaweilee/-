@@ -16,7 +16,9 @@ Tue 08 Oct 2013, 1320 hrs ( 1:20PM)
 
 #### BAIYOKE SUITE HOTEL
 
-<C.HotelNights date={'2013-10-09'} nights={3} />
+```hotel-nights
+2013-10-09,3
+```
 
 Road racers, traffic whistle, dove and the air-conditioning.
 Noises can be heard through the sealed window of 9th floor.
@@ -100,7 +102,9 @@ Soon, I arrived.
 
 ### Baan Rim Klong Resort
 
-<C.HotelNights date={'2013-10-12'} nights={2} />
+```hotel-nights
+2013-10-12,2
+```
 
 > _It belongs to a very kind family._
 > _Good place, just behind The Tourist Center._
@@ -223,7 +227,9 @@ Sat 19 Oct 2013, 1515 hrs ( 3:15PM)
 ### PATONG
 
 Royal Crown Hotel & Palm Spa resort
-<C.HotelNights date={'2013-10-19'} nights={1} />
+```hotel-nights
+2013-10-19,1
+```
 
 <C.Map points={['7.893803,98.305505,16']} />
 
@@ -253,7 +259,9 @@ Mueang Phuket Exercise Park
 ### SIRI
 
 Chill House Nai Yang
-<C.HotelNights date={'2013-10-27'} nights={2} />
+```hotel-nights
+2013-10-27,2
+```
 
 It's the last day I stay in Phuket, it heavy rained in the morning,
 and the wind below to East which mean planes will not landing at beach side.

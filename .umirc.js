@@ -1,4 +1,5 @@
-import render from './src/doc-render';
+const render = require('./src/loaders/render');
+const highlight = require('./src/loaders/hljs');
 
 // ref: https://umijs.org/config/
 export default {
@@ -18,6 +19,7 @@ export default {
       'umi-plugin-md',
       {
         render,
+        highlight,
       },
     ],
     // ref: https://umijs.org/plugin/umi-plugin-react.html

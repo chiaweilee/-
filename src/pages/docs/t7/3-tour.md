@@ -36,11 +36,15 @@ Mon 03 Nov 2014, 1140 hrs ( 11:40AM)
 
 So Hostel
 
-<C.HotelNights date={'2014-11-03'} nights={5} />
+```hotel-nights
+2014-11-03,5
+```
 
 ### TREE HOUSES
 
-<C.HotelNights date={'2014-11-04'} nights={1} />
+```hotel-nights
+2014-11-04,1
+```
 <C.Img src={'treehouse-2.jpg'} />
 <C.Imgs col={2} items={[{src: 'treehouse-1.jpg'},'treehouse-2.jpg']} />
 
@@ -122,7 +126,9 @@ Traditional Thai restaurant at great value price.
 ### Moondance
 
 Moondance Magicview Bungalow
-<C.HotelNights date={'2014-11-12'} nights={1} />
+```hotel-nights
+2014-11-12,1
+```
 <C.Map
   walking={[
     '10.085781,99.825095,Crystal Dive',
@@ -150,7 +156,9 @@ _#THE BEACH#_
 ## BANGKOK
 
 48 ville
-<C.HotelNights date={'2014-11-2'} nights={1} />
+```hotel-nights
+2014-11-2,1
+```
 
 FD552
 ECONOMY PROMO

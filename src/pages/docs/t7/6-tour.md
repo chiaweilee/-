@@ -42,6 +42,8 @@ Awaked at 5 a.m, Lomprayah's bus terminal - Donsak Pier - Koh Phangan Thong Sala
 
 ## KOH PHANGAN 2
 
-<C.HotelNights date={'2017-1-12'} nights={5} />
+```hotel-nights
+2017-1-12,5
+```
 
 ## BANGKOK

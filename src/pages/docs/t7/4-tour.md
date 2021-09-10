@@ -13,7 +13,9 @@ import C from '@/components';
 You think I waste time taking photographs of the sky.
 One night I will get the perfect photograp
 
-<C.HotelNights date={'2015-04-03'} nights={2} />
+```hotel-nights
+2015-04-03,2
+```
 
 Ananda Villa
 
@@ -71,13 +73,17 @@ I lost her glass on this party.
 <C.Img src={'2015-04-09-162348.jpg'} />
 
 Deevana Plaza Krabi Aonang
-<C.HotelNights date={'2015-04-9'} nights={2} />
+```hotel-nights
+2015-04-9,2
+```
 
 
 ## KARON
 
 Woraburi Phuket Resort & Spa
-<C.HotelNights date={'2015-04-11'} nights={4} />
+```hotel-nights
+2015-04-11,4
+```
 
 ### SONGKRAN 1
 
@@ -117,7 +123,9 @@ Woraburi Phuket Resort & Spa
 *pre-flight surface interval*
 
 Cozy Coco Apartment@Phuket Airport
-<C.HotelNights date={'2015-04-19'} nights={2} />
+```hotel-nights
+2015-04-19,2
+```
 
 
 ## BANGKOK
