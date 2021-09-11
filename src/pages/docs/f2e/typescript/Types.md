@@ -4,13 +4,13 @@
 
 #### boolean
 
-```typescript
+```ts
 const bool: boolean = false;
 ```
 
 #### number
 
-```typescript
+```ts
 const decimal: number = 61453;
 const hex: number = 0xf00d;
 const binary: number = 0b1010;
@@ -19,13 +19,13 @@ const octal: number = 0o744;
 
 #### string
 
-```typescript
+```ts
 const str: string = 'Hello, world!';
 ```
 
 #### array
 
-```typescript
+```ts
 const list: number[] = [1, 2, 3];
 const numbers: Array<number> = [1, 2, 3];
 const tuple: [string, number] = ['Jone', 18];
@@ -33,18 +33,18 @@ const tuple: [string, number] = ['Jone', 18];
 
 #### Void
 
-```typescript
+```ts
 const fn = (): void => {};
 ```
 
-```typescript
+```ts
 const x: void = null;
 const y: void = undefined;
 ```
 
 #### null and undefined
 
-```typescript
+```ts
 // --strictNullChecks
 let num: number | null | undefined;
 num = 1;
@@ -54,7 +54,7 @@ num = null;
 
 ### Type assertions
 
-```typescript
+```ts
 const text: any = 'Hello, world!';
 const length1: number = (<string>text).length;
 const length2: number = (text as string).length;
@@ -62,7 +62,7 @@ const length2: number = (text as string).length;
 
 ### Readonly
 
-```typescript
+```ts
 interface Point {
   readonly x: number;
   readonly y: number;
@@ -75,7 +75,7 @@ const num2 = numbers as number[]; // works!
 
 ### Function
 
-```typescript
+```ts
 interface Fn {
   (source: string, subString: string): boolean;
 }
@@ -85,7 +85,7 @@ interface Fn {
 
 #### Implementing an interface
 
-```typescript
+```ts
 interface ClockInterface {
   currentTime: Date;
   setTime(d: Date): void;
@@ -103,7 +103,7 @@ class Clock implements ClockInterface {
 
 #### Extending Interfaces
 
-```typescript
+```ts
 interface Shape {
   color: string;
 }
@@ -115,7 +115,7 @@ interface Square extends Shape {
 
 ### Namespacing
 
-```typescript
+```ts
 namespace Validation {
   export interface StringValidator {
     isAcceptable(s: string): boolean;
@@ -128,7 +128,7 @@ const validators: { [s: string]: Validation.StringValidator } = {};
 
 ### Declare
 
-```typescript
+```ts
 declare var jQuery: (selector: string) => any;
 
 jQuery('#foo');

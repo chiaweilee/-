@@ -16,7 +16,7 @@ avoid use `anonymous function` to callback
 
 ## Closure
 
-```vue.js
+```js
 let closure = 1 export default { data () { return { closure: closure } }, mounted () {
 console.log(closure) console.log(this.closure) closure += 1 } }
 ```
