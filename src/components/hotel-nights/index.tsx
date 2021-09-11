@@ -5,7 +5,7 @@ import { getPropsFromChildren } from '@/components/helper';
 export default function ({ children }) {
   const [detail, setDetail] = useState(false);
   const [dateNights] = getPropsFromChildren(children);
-  if (!dateNights) return null;
+  if (!dateNights) { return null; }
   const [date, nights = 1] = dateNights.split(',');
 
   function switchDetail() {

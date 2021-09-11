@@ -41,16 +41,16 @@ export default class NavigationMenu extends React.PureComponent<any, any> {
     };
   }
 
+  private get data() {
+    return renderRoutes(this.state.routes);
+  }
+
   public render() {
     return (
       this.state.navShow && (
         <Menu data={this.data} onChange={this.onChange} value={this.state.value} />
       )
     );
-  }
-
-  private get data() {
-    return renderRoutes(this.state.routes);
   }
 
   private switchClick = () => {
