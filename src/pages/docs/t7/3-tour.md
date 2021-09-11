@@ -56,7 +56,7 @@ treehouse-2.jpg
 - Moon House
 - Rimtarn House
 
-<C.Cryptor>2920eedff78d53ae0b4d6058bc9d877879aef23b5fdd440f4d80968dcb9e8eb868516f3ae045c663963c2a8b900798c25ae142fae5</C.Cryptor>
+```secret2920eedff78d53ae0b4d6058bc9d877879aef23b5fdd440f4d80968dcb9e8eb868516f3ae045c663963c2a8b900798c25ae142fae5```
 
 <C.Map
   aerial

@@ -43,13 +43,14 @@ const exportJson = (name, data) => {
 
 export const decoder = (code: string) => new Cryptor(localStorage.getItem(secretKey)).decode(code);
 
-export default function (props: any) {
+export default function ({ children }) {
   const [hidden, setHidden] = useState(true);
   const [text, setText] = useState(undefined);
+  const content = typeof children === 'string' ? children.replace(/\n/gi, '') : children;
 
   useEffect(() => {
-    if (typeof props.children === 'string' && localStorage.getItem(secretKey)) {
-      setText(decoder(props.children));
+    if (typeof content === 'string' && localStorage.getItem(secretKey)) {
+      setText(decoder(content));
     }
   }, [hidden]);
 
@@ -62,7 +63,7 @@ export default function (props: any) {
         setHidden(false);
       }}
     >
-      {typeof props.children === 'string' && props.children.substr(0, 100)}
+      {typeof content === 'string' && content.substr(0, 100)}
     </Confidential>
   );
 }

@@ -27,7 +27,7 @@ A couple get on the bus, sit behind me. They talked about is this bus go downtow
 I turned and told them it did. They are lovers, from Wuhan.
 Fall in love by riding. They just stay near by my hostel.
 
-<C.Cryptor>3634fdd8beb043ac07410e73</C.Cryptor>
+```secret3634fdd8beb043ac07410e73```
 
 ### SAPI
 
@@ -146,7 +146,7 @@ Day & Night Guesthouse
 gt-1.jpg
 ```
 
-<C.Cryptor>3226e6c2f7854f</C.Cryptor>
+```secret3226e6c2f7854f```
 
 ### DANNI
 
