@@ -126,7 +126,9 @@ At the cross, I saw fireflies, two or three. Not light in the dark, but beautifu
 
 <C.Map walking={[ '17.022397,99.687335,Restaurant', '17.031913,99.702393,Fireflies', '17.031670,99.706329,Baan Rim Klong Resort', ]} />
 
-<C.Img src={'latu.jpg'} />
+```image
+latu.jpg
+```
 
 _@thongmuanthecrispyrolldog_
 
@@ -140,7 +142,9 @@ _๑ ๒ ๓ ๔ ๕ ๖ ๗ ๘ ๙ ๑๐_
 They teach me how to count in thai.
 That have a lot of funny.
 
-<C.Img src={'DSC2996.jpg'} />
+```image
+DSC2996.jpg
+```
 
 ### MORNING
 
@@ -194,7 +198,9 @@ thai girls learn about "Farangs" when they are small.
 If one finds a Farangs boyfriend or husband, who is willing to pay on her behalf.
 She can build a big house back home. A "Farangs" is a simply a "sugar daddy" to them._
 
-<C.Img src={'sara.jpg'} />
+```image
+sara.jpg
+```
 
 > _ - SARA, 2015_
 

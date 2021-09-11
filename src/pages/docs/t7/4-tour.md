@@ -4,7 +4,9 @@ import C from '@/components';
 
 ## BANGKOK
 
-<C.Img src={'DSC0001.jpg'} />
+```image
+DSC0001.jpg
+```
 
 13.7537798,100.5421587
 
@@ -19,7 +21,9 @@ One night I will get the perfect photograp
 
 Ananda Villa
 
-<C.Img src={'19120471_661258937398565_3756030448896049152_n.jpg'} />
+```image
+19120471_661258937398565_3756030448896049152_n.jpg
+```
 @vicky_jqliii
 
 <C.CImg src={'2015-04-08-120444.jpg'} />
@@ -34,21 +38,37 @@ Ananda Villa
 ]}
 />
 
-<C.Img src={'fullmoon-1.jpg'} />
+```image
+fullmoon-1.jpg
+```
 
-<C.Img src={'fullmoon-2.jpg'} />
+```image
+fullmoon-2.jpg
+```
 
-<C.Img src={'00009150.jpg'} />
+```image
+00009150.jpg
+```
 
-<C.Img src={'00009213.jpg'} />
+```image
+00009213.jpg
+```
 
-<C.Img src={'s3.jpg'} />
+```image
+s3.jpg
+```
 
-<C.Img src={'s4.jpg'} />
+```image
+s4.jpg
+```
 
-<C.Img src={'s5.jpg'} />
+```image
+s5.jpg
+```
 
-<C.Img src={'00008507.jpg'} />
+```image
+00008507.jpg
+```
 
 <C.CImg src={'G0281605.jpg'} />
 
@@ -70,7 +90,9 @@ I lost her glass on this party.
 ]}
 />
 
-<C.Img src={'2015-04-09-162348.jpg'} />
+```image
+2015-04-09-162348.jpg
+```
 
 Deevana Plaza Krabi Aonang
 ```hotel-nights
@@ -105,13 +127,21 @@ Woraburi Phuket Resort & Spa
 ]}
 />
 
-<C.Img src={'similan.jpg'} />
+```image
+similan.jpg
+```
 
-<C.Img src={'00002032.jpg'} />
+```image
+00002032.jpg
+```
 <C.Imgs col={2} items={[{src: '00002026.jpg'},{src: '00002034.jpg'}]} />
 
-<C.Img src={'00009518.jpg'} />
-<C.Img src={'00009523.jpg'} />
+```image
+00009518.jpg
+```
+```image
+00009523.jpg
+```
 
 
 <C.CImg src={'P1010987.jpg'} />

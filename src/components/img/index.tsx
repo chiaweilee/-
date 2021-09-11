@@ -5,14 +5,11 @@ import Picture from '@/components/picture';
 
 let modalDestroyer;
 
-export default function ({ src, alt, origin = false }) {
+export default function ({ children }) {
   const props = {
-    src: origin
-      ? src
-      : process.env.NODE_ENV === 'development'
-      ? `../assets/${src}`
-      : `/home/assets/${src}`,
-    alt,
+    src: process.env.NODE_ENV === 'development'
+      ? `../assets/${children}`
+      : `/home/assets/${children}`,
   };
   useEffect(() => {
     return () => {
@@ -25,7 +22,7 @@ export default function ({ src, alt, origin = false }) {
   return (
     <Picture
       src={props.src}
-      alt={props.alt}
+      alt=""
       onClick={() => {
         modalDestroyer = useModal(
           <Modal>

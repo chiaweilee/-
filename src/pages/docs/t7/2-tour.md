@@ -33,8 +33,12 @@ Fall in love by riding. They just stay near by my hostel.
 
 <C.Map points={['5.9834548,116.0775237']} />
 
-<C.Img src={'00003135.jpg'} />
-<C.Img src={'00003180.jpg'} />
+```image
+00003135.jpg
+```
+```image
+00003180.jpg
+```
 
 
 AK6262
@@ -64,7 +68,9 @@ Then I found we start at the same hostel. Brasil.
 Arrive I met feng cheche.
 And she will go penang after semporna.
 
-<C.Img src={'dd.jpg'} />
+```image
+dd.jpg
+```
 
 ### UNCLE CHANG BANGELOW
 
@@ -72,15 +78,25 @@ And she will go penang after semporna.
 
 <C.Map points={['4.224935,118.683287']} />
 
-<C.Img src={'mabul-1.jpg'} />
+```image
+mabul-1.jpg
+```
 <C.Imgs col={3} items={[{src: 'mabul-2.jpg'},{src: '00023265.jpg'},{src: '00023266.jpg'}]} />
 <C.Imgs col={2} items={[{src: '00023183.jpg'},{src: '00023184.jpg'}]} />
 
-<C.Img src={'00003434.jpg'} />
+```image
+00003434.jpg
+```
 
-<C.Img src={'1611278053015.jpg'} />
-<C.Img src={'mmexport1611412061154.jpg'} />
-<C.Img src={'mmexport1611411982058.jpg'} />
+```image
+1611278053015.jpg
+```
+```image
+mmexport1611412061154.jpg
+```
+```image
+mmexport1611411982058.jpg
+```
 
 ## KOTA KINABALU 2
 
@@ -126,7 +142,9 @@ Day & Night Guesthouse
 2014-01-17,2
 ```
 
-<C.Img src={'gt-1.jpg'} />
+```image
+gt-1.jpg
+```
 
 <C.Cryptor>3226e6c2f7854f</C.Cryptor>
 
@@ -141,7 +159,9 @@ Day & Night Guesthouse
   ]}
 />
 
-<C.Img src={'1611500484268.jpg'} />
+```image
+1611500484268.jpg
+```
 
 ### BAR
 
@@ -178,11 +198,15 @@ Night bar, riding danger
   ]}
 />
 
-<C.Img src={'1611158680144.jpg'} />
+```image
+1611158680144.jpg
+```
 
 ### PENANG HILL   
 
-<C.Img src={'s6.jpg'} />
+```image
+s6.jpg
+```
 
 <C.Map
   walking={[

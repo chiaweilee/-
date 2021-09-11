@@ -3,10 +3,11 @@ import config from '../loaders/config';
 // import Cryptor from '@/components/cryptor';
 // import CryptorImg from '@/components/cryptorImg';
 import HotelNights from '@/components/hotel-nights';
-// import Img from '@/components/img';
+import Img from '@/components/img';
 // import Imgs from '@/components/imgs';
 // import StarNight from '@/components/star-night';
 
 export default {
   'hotel-nights': HotelNights,
+  'image': Img,
 };

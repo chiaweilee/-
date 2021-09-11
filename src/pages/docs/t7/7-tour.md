@@ -48,15 +48,21 @@ Paradise but not Sipadan, located just off shore Mabul Island. Minutes away from
 
 It named "Paradise 2".
 
-<C.Img src={'s1.jpg'} />
+```image
+s1.jpg
+```
 
 <C.Map aerial zoom={15} points={['4.250431,118.630882']} />
 
 ### Kapalai
 
-<C.Img src={'00005170-0001.jpg'} />
+```image
+00005170-0001.jpg
+```
 
-<C.Img src={'00025100-0002.jpg'} />
+```image
+00025100-0002.jpg
+```
 
 ## KOH SAMUI
 
@@ -64,7 +70,9 @@ It named "Paradise 2".
 
 drunkards, goats, hookers, drugsters and tourists.
 
-<C.Img src={'vicky-fish.jpg'} />
+```image
+vicky-fish.jpg
+```
 
 I found a camera in the sand. I asked around, it belongs to nobody. I danced and hang camera over my head. Later, a guy found me, it's his camera. I asked him to check photos in the camera. "Yes, they are!", These must be his important memories.
 
@@ -74,7 +82,9 @@ After that I took speed boat back to KOH SAMUI.
 
 ## SONGKRAN 2561
 
-<C.Img src={'s2.jpg'} />
+```image
+s2.jpg
+```
 
 <C.Map walking={['9.5179429,100.055656,Samui Hostel', '9.5323031,100.0648453,.']} />
 

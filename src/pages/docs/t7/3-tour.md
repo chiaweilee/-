@@ -45,7 +45,9 @@ So Hostel
 ```hotel-nights
 2014-11-04,1
 ```
-<C.Img src={'treehouse-2.jpg'} />
+```image
+treehouse-2.jpg
+```
 <C.Imgs col={2} items={[{src: 'treehouse-1.jpg'},'treehouse-2.jpg']} />
 
 1 pax @ So Hotel, 2 pax @ A Little Bird 2 Guest House, 1 pax @ 9 Hostel, 2 pax @ baan thai (36 nimmanhaeminda Road)
@@ -64,16 +66,22 @@ So Hostel
   ]}
 />
 
-<C.Img src={'treehouse-4.jpg'} />
+```image
+treehouse-4.jpg
+```
 
-<C.Img src={'00002369.jpg'} />
+```image
+00002369.jpg
+```
 
 <C.Map
   aerial
   walking={['18.983908,99.124138,Rabeang Pasak Treehouse Resort', '18.981513,99.116642,.']}
 />
 
-<C.Img src={'treehouse-3.jpg'} />
+```image
+treehouse-3.jpg
+```
 
 ## Swimming
 
@@ -109,9 +117,13 @@ Sat 08 Nov 2014, 1050 hrs ( 10:50AM)
 
 ## KOH TAO
 
-<C.Img src={'crystal.jpg'} />
+```image
+crystal.jpg
+```
 
-<C.Img src={'FB_IMG_1627514624886.jpg'} />
+```image
+FB_IMG_1627514624886.jpg
+```
 
 Crystal Dive Koh Tao with Nick Button, James Tomlinson, Vincent Teschel, Brittany Kalenderian, Tina Major and others
 
@@ -121,7 +133,9 @@ Crystal Dive Koh Tao with Nick Button, James Tomlinson, Vincent Teschel, Brittan
 
 Traditional Thai restaurant at great value price.
 
-<C.Img src={'praness.jpg'} />
+```image
+praness.jpg
+```
 
 ### Moondance
 
@@ -138,18 +152,24 @@ Moondance Magicview Bungalow
 
 ...
 
-<C.Img src={'moondance.jpg'} />
+```image
+moondance.jpg
+```
 _@naootsubo_
 
 
-<C.Img src={'12940195_946079962178994_1559689102_n.jpg'} />
+```image
+12940195_946079962178994_1559689102_n.jpg
+```
 _@panjarat299_
 
 _The room is in darkness. Moonlight penetrates the threadbare curtain. The bed is surrounded by a mosquito net._
 
 _Just visible through the net is the outline of two human forms entwined._
 
-<C.Img src={'beach.png'} />
+```image
+beach.png
+```
 
 _#THE BEACH#_
 
