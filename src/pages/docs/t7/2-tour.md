@@ -1,5 +1,3 @@
-import C from '@/components';
-
 # TOUR TWO BACKPACKER
 
 ## KULA LUMPUR 1
@@ -16,12 +14,9 @@ Irsia BnB Guesthouse
 
 ## KOTA KINABALU 1
 
-<C.Map
-  driving={[
-    '5.943993,116.050642,KKIA Terminal 2',
-    '5.9833774,116.0776038,Borneo Backpackers',
-  ]}
-/>
+```bing-map
+driving:5.943993,116.050642,KKIA Terminal 2|5.9833774,116.0776038,Borneo Backpackers
+```
 
 A couple get on the bus, sit behind me. They talked about is this bus go downtown.
 I turned and told them it did. They are lovers, from Wuhan.
@@ -33,7 +28,9 @@ Fall in love by riding. They just stay near by my hostel.
 
 ### SAPI
 
-<C.Map points={['5.9834548,116.0775237']} />
+```bing-map
+points:5.9834548,116.0775237
+```
 
 ```image
 00003135.jpg
@@ -60,12 +57,9 @@ My phone out of power after landing. I found a sim card store for charging.
 I missed the transform. A guy ask to buy a SIM card,I ask can I take a ride.
 Then I found we start at the same hostel. Brasil.
 
-<C.Map
-  driving={[
-    '4.313783,118.113794,Tawau Airport',
-    '4.479184,118.617147,Borneo Global Sipadan Backpackers',
-  ]}
-/>
+```bing-map
+driving:4.313783,118.113794,Tawau Airport|4.479184,118.617147,Borneo Global Sipadan Backpackers
+```
 
 Arrive I met feng cheche.
 And she will go penang after semporna.
@@ -76,9 +70,13 @@ dd.jpg
 
 ### UNCLE CHANG BANGELOW
 
-<C.Map points={['4.2477133,118.6271726']} />
+```bing-map
+points:4.2477133,118.6271726
+```
 
-<C.Map points={['4.224935,118.683287']} />
+```bing-map
+points:4.224935,118.683287
+```
 
 ```image
 mabul-1.jpg
@@ -124,7 +122,9 @@ Sun 12 Jan 2014, 1105 hrs ( 11:05AM)
 
 You are far from home. You meet a girl. It's exciting, why not? You are attracted to her - it's in your eyes. Perhaps in hers as well. So you think something might happen; it's easy to believe, it's exciting. But she has a boyfriend so you are jealous.
 
-<C.Map points={['5.9830424,116.0764658']} />
+```bing-map
+points:5.9830424,116.0764658
+```
 
 ## GERGORE TOWN
 
@@ -160,14 +160,9 @@ gt-1.jpg
 
 ### DANNI
 
-<C.Map
-  walking={[
-    '5.420885,100.343897,Fort Cornwallis',
-    '5.421882,100.342654,DANNI',
-    '5.420896,100.337566,Love Ln',
-    '5.420208,100.335220,Ryokan Muntri Boutique Hostel',
-  ]}
-/>
+```bing-map
+walking:5.420885,100.343897,Fort Cornwallis|5.421882,100.342654,DANNI|5.420896,100.337566,Love Ln|5.420208,100.335220,Ryokan Muntri Boutique Hostel
+```
 
 ```image
 1611500484268.jpg
@@ -175,13 +170,9 @@ gt-1.jpg
 
 ### BAR
 
-<C.Map
-  walking={[
-    '5.418435,100.335625,Halab Penang',
-    '5.418612,100.336421,Love Ln',
-    '5.420208,100.335220,Ryokan Muntri Boutique Hostel',
-  ]}
-/>
+```bing-map
+walking:5.418435,100.335625,Halab Penang|5.418612,100.336421,Love Ln|5.420208,100.335220,Ryokan Muntri Boutique Hostel
+```
 
 On road back, just passed 7-Eleven corner, at the beginning of Love Ln I walk outside and girls walked inside.
 A motorcycle with two guys race beside me, I saw the guy in the back strangely stared us.
@@ -191,22 +182,15 @@ Night bar, riding danger
 
 ### BEACH
 
-<C.Map
-  driving={[
-    '5.418612,100.336421,Love Ln',
-    '5.477992,100.254231,.',
-  ]}
-/>
+```bing-map
+driving:5.418612,100.336421,Love Ln|5.477992,100.254231,.
+```
 
 ### NIGHT FOOD
 
-<C.Map
-  walking={[
-    '5.420208,100.335220,Ryokan Muntri Boutique Hostel',
-    '5.418612,100.336421,Love Ln',
-    '5.416457,100.332673,Kimberley Street Food Night Market',
-  ]}
-/>
+```bing-map
+walking:5.420208,100.335220,Ryokan Muntri Boutique Hostel|5.418612,100.336421,Love Ln|5.416457,100.332673,Kimberley Street Food Night Market
+```
 
 ```image
 1611158680144.jpg
@@ -218,13 +202,9 @@ Night bar, riding danger
 s6.jpg
 ```
 
-<C.Map
-  walking={[
-    '5.423528,100.269514,Penang Hill Upper Station',
-    '5.418529,100.263881,Ice cream store',
-    '5.4181686,100.2628177,Monkey Family',
-  ]}
-/>
+```bing-map
+walking:5.423528,100.269514,Penang Hill Upper Station|5.418529,100.263881,Ice cream store|5.4181686,100.2628177,Monkey Family
+```
 
 ## KULA LUMPUR 2
 

@@ -9,7 +9,6 @@ let modalDestroyer;
 export default function ({ children }) {
   const [filename, propsInline] = getPropsFromChildren(children);
   const { origin } = getPropsFromInline(propsInline);
-  console.warn(filename, origin);
   const src =
     process.env.NODE_ENV === 'development' ? `../assets/${filename}` : `/home/assets/${filename}`;
   useEffect(() => {

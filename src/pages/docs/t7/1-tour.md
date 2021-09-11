@@ -1,5 +1,3 @@
-import C from '@/components';
-
 # TOUR SOLITARY
 
 ## BANGKOK 1
@@ -60,12 +58,9 @@ with me._
 
 ## SUKHOTHAI
 
-<C.Map
-  driving={[
-    '13.813143,100.548074,Mo Chit Bus Station',
-    '17.014624,99.812901,Sukhothai Bus Terminal',
-  ]}
-/>
+```bing-map
+driving:13.813143,100.548074,Mo Chit Bus Station|17.014624,99.812901,Sukhothai Bus Terminal
+```
 
 Bus stop in downtown, I head to songthaew.
 I asked a discount to ancient city, driver said yes.
@@ -95,14 +90,9 @@ It should be what he teach I think.
 
 Soon, I arrived.
 
-<C.Map
-  driving={[
-    '17.030496,99.702936,Tourist Information Center',
-    '17.032004,99.702915,_',
-    '17.031670,99.706329,Baan Rim Klong Resort',
-  ]}
-  zoom={13}
-/>
+```bing-map
+driving:17.030496,99.702936,Tourist Information Center|17.032004,99.702915,_|17.031670,99.706329,Baan Rim Klong Resort
+```
 
 ### Baan Rim Klong Resort
 
@@ -128,7 +118,9 @@ I met motorbike with a beam headlight riding opposite me that I believe which wi
 
 At the cross, I saw fireflies, two or three. Not light in the dark, but beautiful.
 
-<C.Map walking={[ '17.022397,99.687335,Restaurant', '17.031913,99.702393,Fireflies', '17.031670,99.706329,Baan Rim Klong Resort', ]} />
+```bing-map
+walking:17.022397,99.687335,Restaurant|17.031913,99.702393,Fireflies|17.031670,99.706329,Baan Rim Klong Resort
+```
 
 ```image
 latu.jpg
@@ -156,44 +148,38 @@ Morning, I'm riding east.
 I found a local path which have banglows along.
 I'm riding in the road and say 'hello' to everyone I saw..
 
-<C.Map walking={[
-    '17.031670,99.706329,Baan Rim Klong Resort',
-    '17.0247242,99.7038567,North Gate', '17.018468,99.710928,7-Eleven' ]} />
+```bing-map
+walking:17.031670,99.706329,Baan Rim Klong Resort|17.0247242,99.7038567,North Gate|17.018468,99.710928,7-Eleven
+```
 
 ### ON THE ROAD
 
-<C.Map
-  driving={[
-    '17.018732,99.712043,Wintour Bus Station',
-    '18.799716,99.017627,Chiang Mai Bus Terminal 3'
-  ]}
-/>
+```bing-map
+driving:17.018732,99.712043,Wintour Bus Station|18.799716,99.017627,Chiang Mai Bus Terminal 3
+```
 
 #### GEM
 
 ## CHIANG MAI 1
 
-<C.Map
-  walking={[
-    '18.7964248,98.9940416,Royal Panerai Hotel',
-    '18.7985869,98.9949150,Buffet',
-    '18.7962411,98.9993346,Fresh Fruits Market',
-    '18.7931204,98.9994647,Nakhon Ping Bridge',
-    '18.7908862,99.0016427,Flowers Market',
-    '18.7900200,99.0019467,Restaurant',
-    '18.7902466,98.9933392,Book Store',
-    '18.7964248,98.9940416,Royal Panerai Hotel',
-  ]}
-/>
+```bing-map
+walking:18.7964248,98.9940416,Royal Panerai Hotel|18.7985869,98.9949150,Buffet|18.7962411,98.9993346,Fresh Fruits Market|18.7931204,98.9994647,Nakhon Ping Bridge|18.7908862,99.0016427,Flowers Market|18.7900200,99.0019467,Restaurant|18.7902466,98.9933392,Book Store|18.7964248,98.9940416,Royal Panerai Hotel
+```
 
-<C.Map points={['18.7879872,98.9983752,16']} />
+```bing-map
+points:18.7879872,98.9983752,16
+```
 Wat Buppharam
 
 Tapae Place Hotel
-<C.Map points={['18.7878819,98.9973679,19']} />
+```bing-map
+points:18.7878819,98.9973679,19
+```
 
 Star Hotel Chiang Mai
-<C.Map points={['18.7828211,98.999133,16']} />
+```bing-map
+points:18.7828211,98.999133,16
+```
 
 ### SARA
 
@@ -208,7 +194,9 @@ sara.jpg
 
 > _ - SARA, 2015_
 
-<C.Map points={['18.7840584,98.9978128,16']} />
+```bing-map
+points:18.7840584,98.9978128,16
+```
 Loi Kroh Boxing Stadium
 
 Girls, drinkers and boxers..
@@ -220,7 +208,9 @@ She caught my eyes, a pure cute young face.
 ```
 , her name.
 
-<C.Imgs items={[{src: 'DSC3276.jpg'},{src: 'DSC3279.jpg'},{src: 'DSC3280.jpg'}]} />
+```images
+DSC3276.jpg,DSC3279.jpg,DSC3280.jpg
+```
 
 It became the only way I can forget loneliness.
 I came here everynight to dream? No, I came to be woken up.
@@ -244,30 +234,31 @@ Royal Crown Hotel & Palm Spa resort
 2013-10-19,1
 ```
 
-<C.Map points={['7.893803,98.305505,16']} />
+```bing-map
+points:7.893803,98.305505,16
+```
 
 I Dee Hotel
-<C.Map points={['7.8818396,98.2929051,17']} />
+```bing-map
+points:7.8818396,98.2929051,17
+```
 
 ### PHUKET TOWN
 
-<C.Map
-  driving={[
-    '7.8877042,98.2913469, Patong Bus Station',
-    '7.8832076,98.3852828, Phuket Town Bus Terminal'
-  ]}
-/>
+```bing-map
+driving:7.8877042,98.2913469, Patong Bus Station|7.8832076,98.3852828, Phuket Town Bus Terminal
+```
 
 
 Mueang Phuket Exercise Park
 
-<C.Map
-  walking={['7.8874035,98.3829377,Pattra Mansion by AKSARA Collection', '7.892255,98.3807599,Tunk-ka Cafe']}
-/>
+```bing-map
+walking:7.8874035,98.3829377,Pattra Mansion by AKSARA Collection|7.892255,98.3807599,Tunk-ka Cafe
+```
 
-<C.Map
-  walking={['7.8874035,98.3829377,Pattra Mansion by AKSARA Collection', '7.8684453,98.3959639,.']}
-/>
+```bing-map
+walking:7.8874035,98.3829377,Pattra Mansion by AKSARA Collection|7.8684453,98.3959639,.
+```
 
 ### SIRI
 
@@ -287,10 +278,10 @@ Rain stopped, wind direction changed! When I reached the end of the road.
 I leave the road and step on sand, heading airport along the beach.
 And a flood stream stopped me, my camera will die if I fall into it.
 
-<C.Map
-  walking={['8.0920261,98.3019226,Chill House Nai Yang', '8.092496,98.299101,.', '8.101805,98.299957,.']}
-  points={['8.111834,98.302161']}
-/>
+```bing-map
+walking:8.0920261,98.3019226,Chill House Nai Yang|8.092496,98.299101,.|8.101805,98.299957,.
+points:8.111834,98.302161
+```
 
 Finally, I am at the end of runway.
 

@@ -1,5 +1,3 @@
-import C from '@/components';
-
 # TOUR FOUR SOUL
 
 ## BANGKOK
@@ -32,13 +30,9 @@ Ananda Villa
 
 ### FULLMOON PARTY
 
-<C.Map
-  driving={[
-    '10.084742,99.824118,Koh Tao (Mae Haad Pier)',
-    '9.709127,99.984432,Thong Sala',
-    '9.676993,100.068051,Haad Rin',
-]}
-/>
+```bing-map
+driving:10.084742,99.824118,Koh Tao (Mae Haad Pier)|9.709127,99.984432,Thong Sala|9.676993,100.068051,Haad Rin
+```
 
 ```image
 fullmoon-1.jpg
@@ -92,13 +86,9 @@ I lost her glass on this party.
 
 ## KRABI
 
-<C.Map
-  driving={[
-    '8.042807,98.810486,Ao Nang Landmark Bus Station',
-    '7.884028,98.395726,Phuket Bus Terminal 1',
-    '7.844075,98.294148,Woraburi Phuket Resort & Spa',
-]}
-/>
+```bing-map
+driving:8.042807,98.810486,Ao Nang Landmark Bus Station|7.884028,98.395726,Phuket Bus Terminal 1|7.844075,98.294148,Woraburi Phuket Resort & Spa
+```
 
 ```image
 2015-04-09-162348.jpg
@@ -121,21 +111,15 @@ Woraburi Phuket Resort & Spa
 
 #### A Free Riding
 
-<C.Map
-  driving={[
-    '7.881441,98.294236,Corner',
-    '7.844075,98.294148,Woraburi Phuket Resort & Spa',
-]}
-/>
+```bing-map
+driving:7.881441,98.294236,Corner|7.844075,98.294148,Woraburi Phuket Resort & Spa
+```
 
 ## KOH SIMILAN 1
 
-<C.Map
-  driving={[
-    '7.844075,98.294148,Woraburi Phuket Resort & Spa',
-    '8.644964,98.251020,Khao Lak Scuba Adventures',
-]}
-/>
+```bing-map
+driving:7.844075,98.294148,Woraburi Phuket Resort & Spa|8.644964,98.251020,Khao Lak Scuba Adventures
+```
 
 ```image
 similan.jpg

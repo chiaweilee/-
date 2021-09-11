@@ -1,5 +1,3 @@
-import C from '@/components';
-
 # TOUR SENVEN MEMORY
 
 2 AM, 4 hrs, flight to KULA LUMPUR.
@@ -8,24 +6,15 @@ Airport bus to bus station, and mini bus to park.
 
 MH2121/BKI-TWU/06-APR-2017
 
-<C.Map
-  driving={[
-    '5.9436606,116.0487216,KKIA Terminal 2',
-    '5.9809019,116.0763801,Airport Bus Station',
-    '6.0076652,116.5425745,Mount Kinabalu National Park',
-    '6.0113287,116.5388984,Hill Lodge',
-  ]}
-/>
+```bing-map
+driving:5.9436606,116.0487216,KKIA Terminal 2|5.9809019,116.0763801,Airport Bus Station|6.0076652,116.5425745,Mount Kinabalu National Park|6.0113287,116.5388984,Hill Lodge
+```
 
 ## MOUNT KINABALU
 
-<C.Map
-  walking={[
-    '6.0291003,116.5462398,Timpohon Gate',
-    '6.0589064,116.5651771,Laban Rata Resthouse',
-    '6.0752333,116.5584096,Gunung Kinabalu',
-  ]}
-/>
+```bing-map
+walking:6.0291003,116.5462398,Timpohon Gate|6.0589064,116.5651771,Laban Rata Resthouse|6.0752333,116.5584096,Gunung Kinabalu
+```
 
 ### LOW'S PEAK
 
@@ -52,7 +41,11 @@ It named "Paradise 2".
 s1.jpg
 ```
 
-<C.Map aerial zoom={15} points={['4.250431,118.630882']} />
+```bing-map
+aerial
+zoom:15
+points:4.250431,118.630882
+```
 
 ### Kapalai
 
@@ -86,7 +79,9 @@ After that I took speed boat back to KOH SAMUI.
 s2.jpg
 ```
 
-<C.Map walking={['9.5179429,100.055656,Samui Hostel', '9.5323031,100.0648453,.']} />
+```bing-map
+walking:9.5179429,100.055656,Samui Hostel|9.5323031,100.0648453,.
+```
 
 ```secret-image
 bitch.jpg
@@ -106,7 +101,9 @@ green dreadlocks in dark
 
 <br />
 
-<C.Map walking={['9.5179429,100.055656,Samui Hostel', '9.5256037,100.0567723,Irish Pub']} />
+```bing-map
+walking:9.5179429,100.055656,Samui Hostel|9.5256037,100.0567723,Irish Pub
+```
 
 ```secret
 2f3deadff7951ab20e002371f58ac85570e0b67a7dd0177e468bd4c8e59fc6c1615a7575ec439826f5363a91c43092c74eb94afae609b6f040616398316fe544e1804382014ce54836ed452e29cd96c2f050c4169b5ad565206db1e0089d6026c19b603419542a4478a32b935ed5ada711a0ef9e6ecc0bfccce81fcd4f1e65c1e81c0699c7d2ff63072333a54a67fce3dce8712c866467b069f2e684d157eb890c5dd432065995139786afc9fad5511353aba70f1f26a3c0b7a931a8ecd2445721376bb8f318572ea2ee4f4c68a0cc394980

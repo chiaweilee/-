@@ -1,5 +1,3 @@
-import C from '@/components';
-
 # TOUR THREE HOUSE
 
 ## BANGKOK
@@ -63,13 +61,10 @@ col:2;
 2920eedff78d53ae0b4d6058bc9d877879aef23b5fdd440f4d80968dcb9e8eb868516f3ae045c663963c2a8b900798c25ae142fae5
 ```
 
-<C.Map
-  aerial
-  walking={[
-    '18.983908,99.124138,Rabeang Pasak Treehouse Resort',
-    '18.9869287,99.1186256,จุดชมวิวแผ่นดินหวิด',
-  ]}
-/>
+```bing-map
+aerial
+walking:18.983908,99.124138,Rabeang Pasak Treehouse Resort|18.9869287,99.1186256,จุดชมวิวแผ่นดินหวิด
+```
 
 ```image
 treehouse-4.jpg
@@ -79,10 +74,10 @@ treehouse-4.jpg
 00002369.jpg
 ```
 
-<C.Map
-  aerial
-  walking={['18.983908,99.124138,Rabeang Pasak Treehouse Resort', '18.981513,99.116642,.']}
-/>
+```bing-map
+aerial
+walking:18.983908,99.124138,Rabeang Pasak Treehouse Resort|18.981513,99.116642,.
+```
 
 ```image
 treehouse-3.jpg
@@ -90,9 +85,9 @@ treehouse-3.jpg
 
 ## Swimming
 
-<C.Map
-  points={['18.7979829,98.9660400']}
-/>
+```bing-map
+points:18.7979829,98.9660400
+```
 
 Baan Thai Apartment
 
@@ -111,14 +106,9 @@ Bangkok (DMK)
 Don Mueang International Airport
 Sat 08 Nov 2014, 1050 hrs ( 10:50AM)
 
-<C.Map
-  driving={[
-    '13.759380,100.498725,Lomprayah Bangkok',
-    '10.358415,99.267069,Chumphon (Lomprayah Pier)',
-    '10.084742,99.824118,Koh Tao (Mae Haad Pier)',
-]}
-/>
-
+```bing-map
+driving:13.759380,100.498725,Lomprayah Bangkok|10.358415,99.267069,Chumphon (Lomprayah Pier)|10.084742,99.824118,Koh Tao (Mae Haad Pier)
+```
 
 ## KOH TAO
 
@@ -152,12 +142,10 @@ Moondance Magicview Bungalow
 ```hotel-nights
 2014-11-12,1
 ```
-<C.Map
-  walking={[
-    '10.085781,99.825095,Crystal Dive',
-    '10.0780687,99.8458561,Moondance Magic View Bungalow',
-  ]}
-/>
+
+```bing-map
+walking:10.085781,99.825095,Crystal Dive|10.0780687,99.8458561,Moondance Magic View Bungalow
+```
 
 ...
 

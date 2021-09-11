@@ -8,7 +8,6 @@ export default function ({ children }) {
   const [img, setImg] = useState(undefined);
   const [src, propsInline] = getPropsFromChildren(children);
   const { strict, autoload } = getPropsFromInline(propsInline);
-  console.warn('propsInline', propsInline);
   const secret = localStorage.getItem(secretKey);
 
   async function load() {

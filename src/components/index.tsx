@@ -1,4 +1,4 @@
-// import Map from '@/components/map';
+import Map from '@/components/map';
 import Secret from '@/components/cryptor';
 import SecretImg from '@/components/cryptorImg';
 import HotelNights from '@/components/hotel-nights';
@@ -11,4 +11,5 @@ export default {
   images: Imgs,
   secret: Secret,
   'secret-image': SecretImg,
+  'bing-map': Map,
 };

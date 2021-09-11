@@ -12,11 +12,19 @@ export const getPropsFromInline = (props: string): any => {
     propsList.forEach((prop) => {
       if (typeof prop === 'string') {
         const [key, value] = prop.split(':');
-        console.warn(key,value)
-        propsResult[key] = typeof value === 'undefined' ? true : value;
+        if (key) {
+          propsResult[key] = typeof value === 'undefined' ? true : value;
+        }
       }
     });
     return propsResult;
   }
   return {};
+};
+
+export const getListFromInline = (inline: string): any[] => {
+  if (typeof inline === 'string') {
+    return inline.split('|');
+  }
+  return [];
 };
