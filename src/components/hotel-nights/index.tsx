@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import moment from 'moment';
+import { getPropsFromChildren } from '@/components/helper';
 
-export default function (props: { date: any; nights?: number }) {
+export default function ({ children }) {
   const [detail, setDetail] = useState(false);
-  const { date, nights } = props;
+  const [dateNights] = getPropsFromChildren(children);
+  if (!dateNights) return null;
+  const [date, nights = 1] = dateNights.split(',');
 
   function switchDetail() {
     setDetail(!detail);
@@ -12,13 +15,13 @@ export default function (props: { date: any; nights?: number }) {
   return (
     <div onClick={switchDetail} style={{ marginBottom: '16px' }}>
       <i>{moment(date).format('Do MMM, YYYY')}</i>
-      {detail && typeof nights === 'number' && (
+      {detail && nights && (
         <i>
           {' - '}
-          {moment(date).add(nights, 'd').format('Do MMM, YYYY')}
+          {moment(date).add(Number(nights), 'd').format('Do MMM, YYYY')}
         </i>
       )}
-      {!detail && typeof nights === 'number' && <i>, {nights} nights</i>}
+      {!detail && nights && <i>, {nights} nights</i>}
     </div>
   );
 }

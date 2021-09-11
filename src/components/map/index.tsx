@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Map from './Map';
 import Modal from '@/components/modal/pure';
 import useModal from '@/utils/useModal';
 import styles from './index.less';
+import { getPropsFromChildren, getPropsFromInline, getListFromInline } from '@/components/helper';
 
 const apiKey =
   process.env.NODE_ENV === 'development'
@@ -11,10 +12,17 @@ const apiKey =
 
 let modalDestroyer;
 
-const MapComponent = (props: any) => {
-  const [mask, setMask] = useState(true);
+const MapComponent = ({ children }) => {
+  const propsList = getPropsFromChildren(children);
+  const nativeProps = Object.assign({}, ...propsList.map(getPropsFromInline));
+  const props = {
+    ...nativeProps,
+    driving: getListFromInline(nativeProps.driving),
+    points: getListFromInline(nativeProps.points),
+    walking: getListFromInline(nativeProps.walking),
+  };
   // @ts-ignore
-  const [latitude, longitude] = typeof props.center === 'string' ? props.center.split(',') : [];
+  const [latitude, longitude] = typeof center === 'string' ? center.split(',') : [];
   const points = Array.isArray(props.points)
     ? props.points.map((point: any) => {
         // tslint:disable-next-line:no-shadowed-variable
@@ -55,7 +63,7 @@ const MapComponent = (props: any) => {
 
   return (
     <div className={fullscreenCls} style={{ position: 'relative' }}>
-      {!fullscreen && mask && (
+      {!fullscreen && (
         <div
           className={styles['map-mask']}
           onClick={() => {

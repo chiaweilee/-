@@ -1,5 +1,0 @@
-import Map from '@/components/map';
-
-<Map driving={["13.9200332,100.6017608,Don Mueang A1 Bus,"13.8027214,100.5538505,Mo Chit BTS"]} />
-
-
