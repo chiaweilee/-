@@ -81,8 +81,14 @@ dd.jpg
 ```image
 mabul-1.jpg
 ```
-<C.Imgs col={3} items={[{src: 'mabul-2.jpg'},{src: '00023265.jpg'},{src: '00023266.jpg'}]} />
-<C.Imgs col={2} items={[{src: '00023183.jpg'},{src: '00023184.jpg'}]} />
+```images
+mabul-2.jpg,00023265.jpg,00023266.jpg
+col:3;
+```
+```images
+00023183.jpg,00023184.jpg
+col:2;
+```
 
 ```image
 00003434.jpg

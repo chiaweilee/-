@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import useModal from '@/utils/useModal';
+import { getPropsFromChildren } from '@/components/helper';
 import Modal from '@/components/modal';
 import Picture from '@/components/picture';
 
 let modalDestroyer;
 
 export default function ({ children }) {
+  const [src] = getPropsFromChildren(children);
   const props = {
-    src: process.env.NODE_ENV === 'development'
-      ? `../assets/${children}`
-      : `/home/assets/${children}`,
+    src: process.env.NODE_ENV === 'development' ? `../assets/${src}` : `/home/assets/${src}`,
   };
   useEffect(() => {
     return () => {

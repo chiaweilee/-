@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import moment from 'moment';
+import { getPropsFromChildren } from '@/components/helper';
 
-export default function (props: { children: string }) {
+export default function ({ children }) {
   const [detail, setDetail] = useState(false);
-  const { children } = props;
-  if (!children) return null;
-  const [date, nights = 1] = children.split(',');
+  const [dateNights] = getPropsFromChildren(children);
+  if (!dateNights) return null;
+  const [date, nights = 1] = dateNights.split(',');
 
   function switchDetail() {
     setDetail(!detail);

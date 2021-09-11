@@ -48,7 +48,10 @@ So Hostel
 ```image
 treehouse-2.jpg
 ```
-<C.Imgs col={2} items={[{src: 'treehouse-1.jpg'},'treehouse-2.jpg']} />
+```images
+treehouse-1.jpg,treehouse-2.jpg
+col:2;
+```
 
 1 pax @ So Hotel, 2 pax @ A Little Bird 2 Guest House, 1 pax @ 9 Hostel, 2 pax @ baan thai (36 nimmanhaeminda Road)
 

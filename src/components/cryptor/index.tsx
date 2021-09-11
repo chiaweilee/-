@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { WhiteSpace, Button } from 'antd-mobile';
 import { Typography } from 'antd';
 import Confidential from '@/components/confidential';
+import { getPropsFromChildren } from '@/components/helper';
 
 const Cryptor = require('cryptorjs');
 
@@ -46,7 +47,7 @@ export const decoder = (code: string) => new Cryptor(localStorage.getItem(secret
 export default function ({ children }) {
   const [hidden, setHidden] = useState(true);
   const [text, setText] = useState(undefined);
-  const content = typeof children === 'string' ? children.replace(/\n/gi, '') : children;
+  const [content] = getPropsFromChildren(children);
 
   useEffect(() => {
     if (typeof content === 'string' && localStorage.getItem(secretKey)) {

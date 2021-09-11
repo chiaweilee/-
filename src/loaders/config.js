@@ -1,4 +1,4 @@
-const lang = ['hotel-nights', 'image', 'secret'];
+const lang = ['hotel-nights', 'image', 'images', 'secret'];
 
 module.exports = {
   lang,

@@ -134,7 +134,11 @@ similan.jpg
 ```image
 00002032.jpg
 ```
-<C.Imgs col={2} items={[{src: '00002026.jpg'},{src: '00002034.jpg'}]} />
+
+```images
+00002026.jpg,00002034.jpg
+col:2;
+```
 
 ```image
 00009518.jpg
