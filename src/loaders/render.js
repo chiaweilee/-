@@ -1,4 +1,4 @@
-module.exports = rawHtml => `import React from 'react';
+module.exports = (rawHtml) => `import React from 'react';
 import ReactDOM from 'react-dom';
 import Components from '@/components';
 export default function(props) {
