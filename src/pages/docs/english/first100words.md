@@ -1,7 +1,4 @@
-import AutoSpeak from '@/components/auto-speak';
-
-<AutoSpeak>
-
+```pronounce
 - apple
 - banana
 - baby
@@ -32,5 +29,4 @@ import AutoSpeak from '@/components/auto-speak';
 - airplane
 - ship
 - train
-
-</AutoSpeak>
+```

@@ -1,9 +1,6 @@
-import AutoSpeak from '@/components/auto-speak';
-
 _IPA88_
 
-<AutoSpeak>
-
+```pronounce
 ## /iː/
 
 - fleece
@@ -227,7 +224,6 @@ _IPA88_
 - nation
 - fish
 - shush
+```
 
 48
-
-</AutoSpeak>
