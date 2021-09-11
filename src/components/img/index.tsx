@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
 import useModal from '@/utils/useModal';
-import { getPropsFromChildren } from '@/components/helper';
+import { getPropsFromChildren, getPropsFromInline } from '@/components/helper';
 import Modal from '@/components/modal';
 import Picture from '@/components/picture';
 
 let modalDestroyer;
 
 export default function ({ children }) {
-  const [src] = getPropsFromChildren(children);
-  const props = {
-    src: process.env.NODE_ENV === 'development' ? `../assets/${src}` : `/home/assets/${src}`,
-  };
+  const [filename, propsInline] = getPropsFromChildren(children);
+  const { origin } = getPropsFromInline(propsInline);
+  console.warn(filename, origin);
+  const src =
+    process.env.NODE_ENV === 'development' ? `../assets/${filename}` : `/home/assets/${filename}`;
   useEffect(() => {
     return () => {
       if (typeof modalDestroyer === 'function') {
@@ -21,12 +22,12 @@ export default function ({ children }) {
 
   return (
     <Picture
-      src={props.src}
+      src={src}
       alt=""
       onClick={() => {
         modalDestroyer = useModal(
           <Modal>
-            <Picture {...props} width="100%" />
+            <Picture src={src} width="100%" />
           </Modal>,
         );
       }}

@@ -59,7 +59,9 @@ col:2;
 - Moon House
 - Rimtarn House
 
-```secret2920eedff78d53ae0b4d6058bc9d877879aef23b5fdd440f4d80968dcb9e8eb868516f3ae045c663963c2a8b900798c25ae142fae5```
+```secret
+2920eedff78d53ae0b4d6058bc9d877879aef23b5fdd440f4d80968dcb9e8eb868516f3ae045c663963c2a8b900798c25ae142fae5
+```
 
 <C.Map
   aerial
@@ -130,7 +132,11 @@ FB_IMG_1627514624886.jpg
 
 Crystal Dive Koh Tao with Nick Button, James Tomlinson, Vincent Teschel, Brittany Kalenderian, Tina Major and others
 
-<C.CImg src="kohtao1.jpg" autoload />
+```secret-image
+kohtao1.jpg
+autoload
+```
+
 
 ### Praness's kitchen
 

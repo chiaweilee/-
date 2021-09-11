@@ -12,7 +12,8 @@ export const getPropsFromInline = (props: string): any => {
     propsList.forEach((prop) => {
       if (typeof prop === 'string') {
         const [key, value] = prop.split(':');
-        propsResult[key] = value;
+        console.warn(key,value)
+        propsResult[key] = typeof value === 'undefined' ? true : value;
       }
     });
     return propsResult;

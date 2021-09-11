@@ -88,7 +88,9 @@ s2.jpg
 
 <C.Map walking={['9.5179429,100.055656,Samui Hostel', '9.5323031,100.0648453,.']} />
 
-<C.CImg src={'bitch.jpg'} />
+```secret-image
+bitch.jpg
+```
 
 green dreadlocks on party
 
@@ -130,5 +132,7 @@ green dreadlocks in dark
 
 <br />
 
-<C.CImg src="IMG_20170413_234141.jpg" strict />
-
+```secret-image
+IMG_20170413_234141.jpg
+strict
+```

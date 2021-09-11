@@ -26,7 +26,9 @@ Ananda Villa
 ```
 @vicky_jqliii
 
-<C.CImg src={'2015-04-08-120444.jpg'} />
+```secret-image
+2015-04-08-120444.jpg
+```
 
 ### FULLMOON PARTY
 
@@ -70,13 +72,21 @@ s5.jpg
 00008507.jpg
 ```
 
-<C.CImg src={'G0281605.jpg'} />
+```secret-image
+G0281605.jpg
+```
 
-<C.CImg src={'G0281606.jpg'} />
+```secret-image
+G0281606.jpg
+```
 
-<C.CImg src={'2015-04-11-180042.jpg'} />
+```secret-image
+2015-04-11-180042.jpg
+```
 
-<C.CImg src={'2015-04-06-182934.jpg'} />
+```secret-image
+2015-04-06-182934.jpg
+```
 
 I lost her glass on this party.
 
@@ -148,9 +158,13 @@ col:2;
 ```
 
 
-<C.CImg src={'P1010987.jpg'} />
+```secret-image
+P1010987.jpg
+```
 
-<C.CImg src={'G0032734.jpg'} />
+```secret-image
+G0032734.jpg
+```
 
 ## Phuket
 
