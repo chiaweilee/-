@@ -1,6 +1,0 @@
-{
-  "extends": ["stylelint-config-ali", "stylelint-config-css-modules", "stylelint-config-prettier"],
-  "rules": {
-    "selector-max-id": null
-  }
-}
