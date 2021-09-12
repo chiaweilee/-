@@ -45,7 +45,7 @@ jobs:
             git checkout gh-pages
             rm -rf home
             mv dist home
-            it add -f home
+            git add -f home
             diffInfo=`git diff --stat`
             if [ "$diffInfo" != "" ]; then
               if [ -d /home/ ]; then
