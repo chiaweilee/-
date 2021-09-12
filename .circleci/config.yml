@@ -47,15 +47,11 @@ jobs:
             mv dist home
             git add -f home
             diffInfo=`git diff --stat`
-            if [ "$diffInfo" != "" ]; then
-              if [ -d /home/ ]; then
-                mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-                git config --global user.email "$EMAIL"
-                git config --global user.name "$NAME"
-                git commit -m "deploy: 🤖 auto build"
-                git push
-              fi
-            fi
+            mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+            git config --global user.email "$EMAIL"
+            git config --global user.name "$NAME"
+            git commit -m "deploy: 🤖 auto build"
+            git push
   run_lint:
     <<: *defaults
     steps:
