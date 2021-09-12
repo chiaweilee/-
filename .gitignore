@@ -27,3 +27,4 @@ package-lock.json
 .umi
 
 /src/assets/*.webp
+/home
