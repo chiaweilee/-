@@ -49,6 +49,7 @@ jobs:
                 git config --global user.email "$EMAIL"
                 git config --global user.name "$NAME"
                 git add -f home
+                git checkout gh-pages
                 git commit -m "deploy: 🤖 auto build"
                 git push
               fi
