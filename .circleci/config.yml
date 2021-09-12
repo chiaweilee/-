@@ -42,14 +42,19 @@ jobs:
       - run:
           name: auto deploy
           command: |
-            if [ -d /home/ ]; then
-              mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-              git config --global user.email "$EMAIL"
-              git config --global user.name "$NAME"
-              git add -f home
-              git checkout gh-pages
-              git commit -m "deploy: 🤖 auto build"
-              git push
+            git checkout gh-pages
+            rm -rf home
+            mv dist home
+            it add -f home
+            diffInfo=`git diff --stat`
+            if [ "$diffInfo" != "" ]; then
+              if [ -d /home/ ]; then
+                mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+                git config --global user.email "$EMAIL"
+                git config --global user.name "$NAME"
+                git commit -m "deploy: 🤖 auto build"
+                git push
+              fi
             fi
   run_lint:
     <<: *defaults
