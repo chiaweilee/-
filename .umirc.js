@@ -7,7 +7,7 @@ export default {
   publicPath: '/home/',
   cssPublicPath: '/home/',
   runtimePublicPath: true,
-  outputPath: 'home',
+  outputPath: 'dist',
   hash: true,
   history: 'hash',
   theme: './src/theme.js',
