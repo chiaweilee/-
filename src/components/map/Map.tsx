@@ -24,15 +24,15 @@ const defaultProps = {
 };
 
 export default class extends React.PureComponent<IMapProps & typeof defaultProps, any> {
-  public static defaultProps = defaultProps;
+  static defaultProps = defaultProps;
   private mapRef = React.createRef<HTMLDivElement>();
   private map: any;
 
-  public render() {
+  render() {
     return <div ref={this.mapRef} className={this.props.className} style={this.props.style} />;
   }
 
-  public componentDidMount() {
+  componentDidMount() {
     loadBingApi(this.props.apiKey).then(() => {
       this.initMap();
       this.walking();
@@ -42,7 +42,7 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
     });
   }
 
-  public componentWillUnmount() {
+  componentWillUnmount() {
     if (this.map) {
       this.map.dispose();
     }

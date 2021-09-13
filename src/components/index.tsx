@@ -13,5 +13,5 @@ export default {
   secret: Secret,
   'secret-image': SecretImg,
   'bing-map': Map,
-  'pronounce': AutoSpeak,
+  pronounce: AutoSpeak,
 };

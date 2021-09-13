@@ -54,7 +54,5 @@ export default function ({ children }) {
       />
     );
   }
-  return (
-    <img src={img} alt="" />
-  );
+  return <img src={img} alt="" />;
 }

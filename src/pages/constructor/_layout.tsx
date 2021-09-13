@@ -24,7 +24,7 @@ export default class extends React.PureComponent<any, State> {
       return `${baseUrl}${this.refer}${ext}`;
     }
   }
-  public render() {
+  render() {
     return (
       <>
         <NavBar
@@ -39,7 +39,7 @@ export default class extends React.PureComponent<any, State> {
           }}
           rightContent={
             this.githubPage && (
-              <a href={this.githubPage} target="_blank">
+              <a href={this.githubPage} target="_blank" rel="noreferrer">
                 <Icon type="icongithub" />
               </a>
             )

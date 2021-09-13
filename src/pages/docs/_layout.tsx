@@ -23,7 +23,7 @@ export default class extends React.PureComponent<any, any> {
     const ext = '.mdx';
     return `${baseUrl}${pathname}${ext}`;
   }
-  public render() {
+  render() {
     return (
       <>
         <NavBar

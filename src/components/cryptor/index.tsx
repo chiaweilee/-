@@ -90,7 +90,7 @@ export function Encoder(props) {
         }}
         style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
       >
-        <Text code={true}>{text}</Text>
+        <Text code>{text}</Text>
       </Paragraph>
       <WhiteSpace />
       {props.img && (

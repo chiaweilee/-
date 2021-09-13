@@ -4,7 +4,7 @@ function hex2int(hex) {
   let code;
   for (let i = 0; i < len; i++) {
     code = hex.charCodeAt(i);
-    if (48 <= code && code < 58) {
+    if (code >= 48 && code < 58) {
       code -= 48;
     } else {
       code = (code & 0xdf) - 65 + 10;
@@ -25,7 +25,7 @@ function int2hex(num) {
     s = hex.charAt(num % 16) + s;
     num = Math.floor(num / 16);
   }
-  return '' + (s || 0);
+  return `${s || 0}`;
 }
 
 function group(string: string) {

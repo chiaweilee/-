@@ -32,7 +32,7 @@ function renderRoutes(routes, deepIndex = 1) {
 }
 
 export default class NavigationMenu extends React.PureComponent<any, any> {
-  public constructor(props: any) {
+  constructor(props: any) {
     super(props);
     this.state = {
       navShow: false,
@@ -45,7 +45,7 @@ export default class NavigationMenu extends React.PureComponent<any, any> {
     return renderRoutes(this.state.routes);
   }
 
-  public render() {
+  render() {
     return (
       this.state.navShow && (
         <Menu data={this.data} onChange={this.onChange} value={this.state.value} />

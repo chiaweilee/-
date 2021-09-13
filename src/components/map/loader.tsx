@@ -3,7 +3,7 @@ declare let window: any;
 let loader: Promise<any>;
 
 export function loadBingApi(key: string): Promise<void> {
-  if (!!window.Microsoft) {
+  if (window.Microsoft) {
     return Promise.resolve();
   }
 

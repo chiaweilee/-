@@ -83,7 +83,7 @@ export default (props: any) => {
       <Button
         type="ghost"
         icon={<Icon type={'iconvoicelight'} />}
-        inline={true}
+        inline
         size="small"
         onClick={say(word)}
         loading={loading}

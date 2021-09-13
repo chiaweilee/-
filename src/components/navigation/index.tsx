@@ -19,7 +19,7 @@ const computeRoutes = (routes: any): any[] => {
 };
 
 export default class extends React.PureComponent<any, any> {
-  public constructor(props: any) {
+  constructor(props: any) {
     super(props);
     this.state = {
       routes: computeRoutes(props.route && props.route.routes),
@@ -59,7 +59,7 @@ export default class extends React.PureComponent<any, any> {
     );
   }
 
-  public render() {
+  render() {
     return (
       <>
         <WhiteSpace size="lg" />

@@ -1,6 +1,13 @@
 export const onTouch = (opt = {}) => {
   // @ts-ignore
-  const { longTouchTimeout, dblclickTimeout, onLongPress, onClick, onDblClick, style = {} } = {
+  const {
+    longTouchTimeout,
+    dblclickTimeout,
+    onLongPress,
+    onClick,
+    onDblClick,
+    style = {},
+  } = {
     longTouchTimeout: 1000,
     dblclickTimeout: 200,
     ...opt,

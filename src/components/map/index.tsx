@@ -25,7 +25,6 @@ const MapComponent = ({ children }) => {
   const [latitude, longitude] = typeof center === 'string' ? center.split(',') : [];
   const points = Array.isArray(props.points)
     ? props.points.map((point: any) => {
-        // tslint:disable-next-line:no-shadowed-variable
         const [latitude, longitude] = point.split(',');
         return { latitude, longitude };
       })
@@ -37,14 +36,12 @@ const MapComponent = ({ children }) => {
         points[0] && { latitude: points[0].latitude, longitude: points[0].longitude };
   const walking = Array.isArray(props.walking)
     ? props.walking.map((point: any) => {
-        // tslint:disable-next-line:no-shadowed-variable
         const [latitude, longitude, address] = point.split(',');
         return { latitude, longitude, address };
       })
     : [];
   const driving = Array.isArray(props.driving)
     ? props.driving.map((point: any) => {
-        // tslint:disable-next-line:no-shadowed-variable
         const [latitude, longitude, address] = point.split(',');
         return { latitude, longitude, address };
       })
@@ -58,7 +55,7 @@ const MapComponent = ({ children }) => {
     };
   }, []);
 
-  const fullscreen = props.fullscreen;
+  const { fullscreen } = props;
   const fullscreenCls = fullscreen ? styles['map-fullscreen'] : styles['map-wrapper'];
 
   return (
@@ -68,8 +65,8 @@ const MapComponent = ({ children }) => {
           className={styles['map-mask']}
           onClick={() => {
             modalDestroyer = useModal(
-              <Modal fullscreen={true}>
-                <MapComponent fullscreen={true} {...props} />
+              <Modal fullscreen>
+                <MapComponent fullscreen {...props} />
               </Modal>,
             );
           }}
