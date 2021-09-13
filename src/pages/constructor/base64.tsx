@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, WhiteSpace, InputItem } from 'antd-mobile';
+import { WhiteSpace } from 'antd-mobile';
 import { Encoder } from '@/components/cryptor';
 import styles from './base64.less';
 
