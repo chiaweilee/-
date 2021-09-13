@@ -6,7 +6,7 @@ import NavigationMenu from '@/components/navigationMenu';
 import { secretKey } from '@/components/cryptor';
 import utils from '@/utils';
 
-const actions = ['Cryptor', 'Base64'];
+const actions = ['Cryptor', 'Base64', 'Map'];
 
 export default class extends React.PureComponent<any, any> {
   private menuRef = {} as any;
@@ -20,7 +20,7 @@ export default class extends React.PureComponent<any, any> {
       location: { pathname },
     } = this.props;
     const baseUrl = 'https://github.com/chiaweilee/-/tree/master/src/pages';
-    const ext = '.mdx';
+    const ext = '.md';
     return `${baseUrl}${pathname}${ext}`;
   }
   render() {

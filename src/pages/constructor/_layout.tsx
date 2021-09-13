@@ -20,7 +20,7 @@ export default class extends React.PureComponent<any, State> {
   private get githubPage(): string | void {
     if (this.refer) {
       const baseUrl = 'https://github.com/chiaweilee/-/tree/master/src/pages';
-      const ext = '.mdx';
+      const ext = '.md';
       return `${baseUrl}${this.refer}${ext}`;
     }
   }
