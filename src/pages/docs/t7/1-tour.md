@@ -231,9 +231,18 @@ Say goodbye to my "first love" in the music of `Every Breath You Take`.
 
 ### LUCKY
 
-FD3162 CNX - HKT
+```airasia
+FD3162
+
+ECONOMY
+PROMO
+Chiang Mai (CNX)
+Chiang Mai
 Sat 19 Oct 2013, 1310 hrs ( 1:10PM)
+Phuket (HKT)
+Phuket
 Sat 19 Oct 2013, 1515 hrs ( 3:15PM)
+```
 
 ## PHUKET 1
 
@@ -302,9 +311,19 @@ And the sky just went to warming and shinning.
 
 I did it by perseverance.
 
-FD3020 HKT - DMK
+```airasia
+FD3020
+
+ECONOMY
+
+PROMO
+Phuket (HKT)
+Phuket
 Tue 29 Oct 2013, 0800 hrs ( 8:00AM)
+Bangkok (DMK)
+Don Mueang International Airport
 Tue 29 Oct 2013, 0925 hrs ( 9:25AM)
+```
 
 ## BANGKOK 2
 
@@ -318,6 +337,16 @@ He and his Thai girl did keep me awake. That's Ok, he's on holiday.
 I just has time to enjoy the "silence" after turning air-conditioning and television on.
 Then they reach the climax of their activity and fall silent.
 
-FD2550 DMK - CKG
+```airasia
+FD2550
+
+ECONOMY
+PROMO
+Bangkok (DMK)
+Don Mueang International Airport
 Thu 31 Oct 2013, 0620 hrs ( 6:20AM)
+Chongqing (CKG)
+Chongqing Jiangbei International
+Airport
 Thu 31 Oct 2013, 1020 hrs ( 10:20AM)
+```
