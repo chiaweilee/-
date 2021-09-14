@@ -6,6 +6,8 @@ import Cryptor from '@/components/cryptor';
 import CryptorImg from '@/components/cryptorImg';
 import Map from '@/components/map';
 import AutoSpeak from '@/components/auto-speak';
+import Flights from '@/components/flights';
+import { getFlightNo, getAirport, getFlightDateTime } from '@/components/flights/util';
 import { getListFromInline, getPropsFromChildren, getPropsFromInline } from '@/components/helper';
 
 const { key } = require('../loaders/config');
@@ -42,6 +44,24 @@ export default function processor(lang, children) {
       );
     case key.pronounce:
       return <AutoSpeak>{children}</AutoSpeak>;
+    case key.airasia:
+      const airports = getAirport(children);
+      const flightDateTimes = getFlightDateTime(children);
+      return (
+        <Flights
+          no={getFlightNo(children)}
+          flights={[
+            {
+              airport: airports[0],
+              time: flightDateTimes[0],
+            },
+            {
+              airport: airports[1],
+              time: flightDateTimes[1],
+            },
+          ]}
+        />
+      );
     default:
       return null;
   }

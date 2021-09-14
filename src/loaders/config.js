@@ -6,6 +6,7 @@ const key = {
   'bing-map': 'bing-map',
   pronounce: 'pronounce',
   'secret-image': 'secret-image',
+  airasia: 'airasia',
 };
 
 const lang = Object.keys(key);

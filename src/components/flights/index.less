@@ -1,0 +1,18 @@
+.flightWrapper {
+  position: relative;
+}
+
+.flightNo {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 999;
+  :global {
+    span {
+      padding: 0 8px;
+      display: inline-block;
+      background-color: #eee;
+    }
+  }
+}
