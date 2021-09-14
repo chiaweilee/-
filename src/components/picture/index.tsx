@@ -16,7 +16,7 @@ interface PictureProps {
 export default function (props: PictureProps) {
   return (
     <picture onClick={props.onClick}>
-      <source type="image/webp" {...{ srcset: ext(props.src) }} />
+      <source type="image/webp" {...{ srcSet: ext(props.src) }} />
       <img src={props.src} alt={props.alt} />
     </picture>
   );
