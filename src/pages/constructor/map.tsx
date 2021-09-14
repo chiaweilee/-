@@ -14,7 +14,7 @@ function onChange(setter: (e: any) => void) {
 export default function () {
   const [text, setText] = useState('');
   const [place, lnglat] = googleMapUrlParser(text);
-  const code = [lnglat, place].filter((_) => _).join(',');
+  const code = '```bing-map\n' + [lnglat, place].filter((_) => _).join(',') + '\n```';
   return (
     <div>
       <TextareaItem rows={4} count={9999} onChange={onChange(setText)} />
