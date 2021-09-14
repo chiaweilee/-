@@ -6,9 +6,19 @@
 
 > _- The Beach, 2000_
 
-FD2557 CKG - DMK
+```airasia
+FD2557
+
+ECONOMY
+PROMO
+Chongqing (CKG)
+Chongqing Jiangbei International
+Airport
 Tue 08 Oct 2013, 1110 hrs ( 11:10AM)
+Bangkok (DMK)
+Don Mueang International Airport
 Tue 08 Oct 2013, 1320 hrs ( 1:20PM)
+```
 
 ### PRATUNAM
 
