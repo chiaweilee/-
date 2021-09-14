@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { WhiteSpace, Button } from 'antd-mobile';
 import { Typography } from 'antd';
 import Confidential from '@/components/confidential';
-import { getPropsFromChildren } from '@/components/helper';
 
 const Cryptor = require('cryptorjs');
 
@@ -44,14 +43,13 @@ const exportJson = (name, data) => {
 
 export const decoder = (code: string) => new Cryptor(localStorage.getItem(secretKey)).decode(code);
 
-export default function ({ children }) {
+export default function (props: any) {
   const [hidden, setHidden] = useState(true);
   const [text, setText] = useState(undefined);
-  const [content] = getPropsFromChildren(children);
 
   useEffect(() => {
-    if (typeof content === 'string' && localStorage.getItem(secretKey)) {
-      setText(decoder(content));
+    if (typeof props.children === 'string' && localStorage.getItem(secretKey)) {
+      setText(decoder(props.children));
     }
   }, [hidden]);
 
@@ -64,7 +62,7 @@ export default function ({ children }) {
         setHidden(false);
       }}
     >
-      {typeof content === 'string' && content.substr(0, 100)}
+      {typeof props.children === 'string' && props.children.substr(0, 100)}
     </Confidential>
   );
 }
@@ -90,7 +88,7 @@ export function Encoder(props) {
         }}
         style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}
       >
-        <Text code>{text}</Text>
+        <Text code={true}>{text}</Text>
       </Paragraph>
       <WhiteSpace />
       {props.img && (

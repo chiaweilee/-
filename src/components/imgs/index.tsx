@@ -1,32 +1,41 @@
 import React from 'react';
 import Img from '@/components/img';
 import { Grid } from 'antd-mobile';
-import { getPropsFromChildren, getPropsFromInline } from '@/components/helper';
 
-export default function ({ children }) {
-  const [items, propsInline] = getPropsFromChildren(children);
-  const data: any[] = typeof items === 'string' ? items.split(',') : [];
-  const { col } = getPropsFromInline(propsInline);
+export default function ({ items, col = 3 }) {
   return (
     <Grid
-      data={data}
+      data={items}
       columnNum={col}
-      renderItem={(src: any) => {
-        if (typeof src === 'string') {
+      renderItem={(props) => {
+        if (typeof props === 'string') {
           return (
             <div
               style={{
                 backgroundImage: `url(${
                   process.env.NODE_ENV === 'development'
-                    ? `../assets/${src}`
-                    : `/home/assets/${src}`
-                })`,
+                    ? `../assets/${props}`
+                    : `/home/assets/${props}`
+                  })`,
               }}
             >
-              <Img>{src}</Img>
+              <Img src={props} alt="" />
             </div>
           );
         }
+        return (
+          <div
+            style={{
+              backgroundImage: `url(${
+                process.env.NODE_ENV === 'development'
+                  ? `../assets/${props.src}`
+                  : `/home/assets/${props.src}`
+                })`,
+            }}
+          >
+            <Img {...props} src={props.src} alt={props.alt} />
+          </div>
+        );
       }}
     />
   );

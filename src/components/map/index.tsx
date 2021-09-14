@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Map from './Map';
 import Modal from '@/components/modal/pure';
 import useModal from '@/utils/useModal';
 import styles from './index.less';
-import { getPropsFromChildren, getPropsFromInline, getListFromInline } from '@/components/helper';
 
 const apiKey =
   process.env.NODE_ENV === 'development'
@@ -12,39 +11,35 @@ const apiKey =
 
 let modalDestroyer;
 
-const MapComponent = ({ children }) => {
-  const propsList = getPropsFromChildren(children);
-  const nativeProps = Object.assign({}, ...propsList.map(getPropsFromInline));
-  const props = {
-    ...nativeProps,
-    driving: getListFromInline(nativeProps.driving),
-    points: getListFromInline(nativeProps.points),
-    walking: getListFromInline(nativeProps.walking),
-  };
+const MapComponent = (props: any) => {
+  const [mask, setMask] = useState(true);
   // @ts-ignore
-  const [latitude, longitude] = typeof center === 'string' ? center.split(',') : [];
+  const [latitude, longitude] = typeof props.center === 'string' ? props.center.split(',') : [];
   const points = Array.isArray(props.points)
     ? props.points.map((point: any) => {
-        const [latitude, longitude] = point.split(',');
-        return { latitude, longitude };
-      })
+      // tslint:disable-next-line:no-shadowed-variable
+      const [latitude, longitude] = point.split(',');
+      return { latitude, longitude };
+    })
     : [];
   const center =
     latitude && longitude
       ? { latitude, longitude }
       : // try using points as center
-        points[0] && { latitude: points[0].latitude, longitude: points[0].longitude };
+      points[0] && { latitude: points[0].latitude, longitude: points[0].longitude };
   const walking = Array.isArray(props.walking)
     ? props.walking.map((point: any) => {
-        const [latitude, longitude, address] = point.split(',');
-        return { latitude, longitude, address };
-      })
+      // tslint:disable-next-line:no-shadowed-variable
+      const [latitude, longitude, address] = point.split(',');
+      return { latitude, longitude, address };
+    })
     : [];
   const driving = Array.isArray(props.driving)
     ? props.driving.map((point: any) => {
-        const [latitude, longitude, address] = point.split(',');
-        return { latitude, longitude, address };
-      })
+      // tslint:disable-next-line:no-shadowed-variable
+      const [latitude, longitude, address] = point.split(',');
+      return { latitude, longitude, address };
+    })
     : [];
 
   useEffect(() => {
@@ -55,18 +50,18 @@ const MapComponent = ({ children }) => {
     };
   }, []);
 
-  const { fullscreen } = props;
+  const fullscreen = props.fullscreen;
   const fullscreenCls = fullscreen ? styles['map-fullscreen'] : styles['map-wrapper'];
 
   return (
     <div className={fullscreenCls} style={{ position: 'relative' }}>
-      {!fullscreen && (
+      {!fullscreen && mask && (
         <div
           className={styles['map-mask']}
           onClick={() => {
             modalDestroyer = useModal(
-              <Modal fullscreen>
-                <MapComponent fullscreen {...props} />
+              <Modal fullscreen={true}>
+                <MapComponent fullscreen={true} {...props} />
               </Modal>,
             );
           }}

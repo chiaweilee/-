@@ -1,6 +1,6 @@
 module.exports = (rawHtml) => `import React from 'react';
 import ReactDOM from 'react-dom';
-import Components from '@/components';
+import processor from '@/components/processor';
 export default function(props) {
   // scroll to anchor after page component loaded
     React.useEffect(() => {
@@ -9,14 +9,11 @@ export default function(props) {
         const target = targets[i];
         const lang = target.getAttribute('data-react-lang');
         const children = target.getAttribute('data-react-children');
-        const Component = Components[lang];
-        if (Component) {
-          const div = document.createElement('div');
-          div['data-react-mounted'] = '';
-          target.parentNode.insertBefore(div, target);
-          target.remove();
-          ReactDOM.render(<Component>{children}</Component>, div);
-        }
+        const div = document.createElement('div');
+        div['data-react-mounted'] = '';
+        target.parentNode.insertBefore(div, target);
+        target.remove();
+        ReactDOM.render(processor(lang, children), div);
       }
       return () => {
         const targets = document.querySelectorAll('div[data-react-mounted]');

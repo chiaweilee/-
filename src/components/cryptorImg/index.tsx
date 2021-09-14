@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
+import Img from '@/components/img/';
+import Picture from '@/components/picture/';
 import { decoder, secretKey } from '@/components/cryptor';
 import { onTouch } from '@/utils/e';
-import { getPropsFromChildren, getPropsFromInline } from '@/components/helper';
 
-export default function ({ children }) {
+export default function (props) {
   const [hidden, setHidden] = useState(true);
   const [img, setImg] = useState(undefined);
-  const [src, propsInline] = getPropsFromChildren(children);
-  const { strict, autoload } = getPropsFromInline(propsInline);
+  const { src, strict, alt, autoload } = props;
   const secret = localStorage.getItem(secretKey);
 
   async function load() {
@@ -41,7 +41,7 @@ export default function ({ children }) {
 
   if (hidden) {
     return (
-      <img
+      <Picture
         {...onTouch({
           longTouchTimeout: strict ? 30000 : 3000,
           onLongPress: () => {
@@ -49,10 +49,11 @@ export default function ({ children }) {
           },
         })}
         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-        alt=""
+        alt={alt}
         style={{ height: '33vw' }}
       />
     );
   }
-  return <img src={img} alt="" />;
+
+  return <Img origin={true} src={img} alt={alt} />;
 }
