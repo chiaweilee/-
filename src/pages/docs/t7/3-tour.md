@@ -2,6 +2,7 @@
 
 ## BANGKOK
 
+```airasia
 FD553
 
 ECONOMY PROMO
@@ -12,6 +13,7 @@ Sun 02 Nov 2014, 1955 hrs ( 7:55PM)
 Bangkok (DMK)
 Don Mueang International Airport
 Sun 02 Nov 2014, 2205 hrs ( 10:05PM)## CHIANG MAI
+```
 
 > _You are far from home._
 > _You meet a girl._
@@ -21,6 +23,7 @@ Sun 02 Nov 2014, 2205 hrs ( 10:05PM)## CHIANG MAI
 > _So you think something might happen; it's easy to believe, it's exciting._
 > _But she has a boyfriend so you are jealous._
 
+```airasia
 FD3435
 
 ECONOMY PROMO
@@ -31,6 +34,7 @@ Mon 03 Nov 2014, 1030 hrs ( 10:30AM)
 Chiang Mai (CNX)
 Chiang Mai International Airport
 Mon 03 Nov 2014, 1140 hrs ( 11:40AM)
+```
 
 So Hostel
 
@@ -95,6 +99,7 @@ Baan Thai Apartment
 
 ## BANGKOK
 
+```airasia
 FD3446
 
 ECONOMY PROMO
@@ -105,6 +110,7 @@ Sat 08 Nov 2014, 0930 hrs ( 9:30AM)
 Bangkok (DMK)
 Don Mueang International Airport
 Sat 08 Nov 2014, 1050 hrs ( 10:50AM)
+```
 
 ```bing-map
 driving:13.759380,100.498725,Lomprayah Bangkok|10.358415,99.267069,Chumphon (Lomprayah Pier)|10.084742,99.824118,Koh Tao (Mae Haad Pier)
@@ -177,6 +183,7 @@ _#THE BEACH#_
 2014-11-2,1
 ```
 
+```airasia
 FD552
 ECONOMY PROMO
 Bangkok (DMK)
@@ -185,3 +192,4 @@ Fri 14 Nov 2014, 1455 hrs ( 2:55PM)
 Chongqing (CKG)
 Chongqing Jiangbei International Airport
 Fri 14 Nov 2014, 1905 hrs ( 7:05PM)
+```
