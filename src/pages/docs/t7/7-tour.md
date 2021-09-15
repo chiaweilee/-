@@ -5,6 +5,9 @@ KOTA KINABALU from 9 Am to 12 Am, directly.
 Airport bus to bus station, and mini bus to park.
 
 MH2121/BKI-TWU/06-APR-2017
+```airasia
+MH2121/(BKI)-(TWU)/Xxx 06 Apr 2017, 0000 hrs
+```
 
 ```bing-map
 driving:5.9436606,116.0487216,KKIA Terminal 2|5.9809019,116.0763801,Airport Bus Station|6.0076652,116.5425745,Mount Kinabalu National Park|6.0113287,116.5388984,Hill Lodge
