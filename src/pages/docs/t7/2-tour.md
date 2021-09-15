@@ -2,10 +2,11 @@
 
 ## KULA LUMPUR 1
 
-AK1009 KMG - KUL
+```airasia
+AK1009 (KMG) - (KUL)
 Sat 04 Jan 2014, 1740 hrs ( 5:40PM)
 Sat 04 Jan 2014, 2150 hrs ( 9:50PM)
-
+```
 
 Irsia BnB Guesthouse
 ```hotel-nights
@@ -39,7 +40,7 @@ points:5.9834548,116.0775237
 00003180.jpg
 ```
 
-
+```airasia
 AK6262
 
 ECONOMY
@@ -50,6 +51,7 @@ Wed 08 Jan 2014, 1605 hrs ( 4:05PM)
 Tawau (TWU)
 Tawau Airport
 Wed 08 Jan 2014, 1700 hrs ( 5:00PM)
+```
 
 ## MABUL 1
 
@@ -106,6 +108,7 @@ mmexport1611411982058.jpg
 
 ## KOTA KINABALU 2
 
+```airasia
 AK6269
 
 ECONOMY
@@ -117,6 +120,7 @@ Sun 12 Jan 2014, 1015 hrs ( 10:15AM)
 Kota Kinabalu (BKI)
 Kota Kinabalu International Airport (T2)
 Sun 12 Jan 2014, 1105 hrs ( 11:05AM)
+```
 
 ### MAEILYNE
 
@@ -128,6 +132,7 @@ points:5.9830424,116.0764658
 
 ## GERGORE TOWN
 
+```airasia
 AK5323
 
 ECONOMY
@@ -139,6 +144,7 @@ Mon 13 Jan 2014, 1320 hrs ( 1:20PM)
 Penang (PEN)
 Penang International Airport
 Mon 13 Jan 2014, 1605 hrs ( 4:05PM)
+```
 
 Ryokan @ Muntri Street
 ```hotel-nights
@@ -213,6 +219,8 @@ Hotel Budget Inn Jalan Alor
 2014-01-19,2
 ```
 
-AK1008 KUL - KMG
+```airasia
+AK1008 (KUL) - (KMG)
 Tue 21 Jan 2014, 1305 hrs ( 1:05PM)
 Tue 21 Jan 2014, 1655 hrs ( 4:55PM)
+```
