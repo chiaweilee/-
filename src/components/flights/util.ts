@@ -1,6 +1,5 @@
 export const getFlightNo = (children: string): string => {
-  // not support No. '3U' yet
-  const matcher = /[A-Z]{2}\d{3,4}/g.exec(children);
+  const matcher = /([A-Z]{2}|3U|D7)\d{3,4}/g.exec(children);
   return (matcher && matcher[0]) || '';
 };
 
