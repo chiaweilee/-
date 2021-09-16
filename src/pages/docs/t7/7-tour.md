@@ -4,7 +4,15 @@
 KOTA KINABALU from 9 Am to 12 Am, directly.
 Airport bus to bus station, and mini bus to park.
 
-MH2121/BKI-TWU/06-APR-2017
+```
+D7809
+Low Fare	
+(CKG) Chongqing
+Sun 02 Apr 2017, 0150 hrs
+(KUL) Kuala Lumpur
+Sun 02 Apr 2017, 0640 hrs
+```
+
 ```airasia
 From: Kota Kinabalu Intl
 To: Tawau
@@ -14,6 +22,15 @@ Arrive: Thu, Apr 6, 08:30
 (BKI)-(TWU)
 Xxx 06 Apr 2017, 0740 hrs
 Xxx 06 Apr 2016, 0830 hrs
+```
+
+```airasia
+AK5106
+Low Fare	
+(KUL) Kuala Lumpur
+Sun 02 Apr 2017, 0930 hrs
+(BKI) Kota Kinabalu
+Sun 02 Apr 2017, 1205 hrs
 ```
 
 ```bing-map
@@ -43,6 +60,15 @@ I slowly move to a drug store,
 
 ## SEA VENTURES
 
+```airasia
+AK6260
+Low Fare	
+(BKI) Kota Kinabalu
+Thu 06 Apr 2017, 0900 hrs
+(TWU) Tawau
+Thu 06 Apr 2017, 0955 hrs
+```
+
 Paradise but not Sipadan, located just off shore Mabul Island. Minutes away from the Rig, the dive site is made up of artificial house reef where old dive boats were sunk, man-made structure such as pyramids and crates are now home to abundance of marine life. The artificial reef is a collaboration work of resorts within and nearby Mabul.
 
 It named "Paradise 2".
@@ -65,6 +91,24 @@ points:4.250431,118.630882
 
 ```image
 00025100-0002.jpg
+```
+
+```airasia
+AK5741
+Low Fare	
+(TWU) Tawau
+Sun 09 Apr 2017, 0700 hrs
+(KUL) Kuala Lumpur
+Sun 09 Apr 2017, 0945 hrs
+```
+
+```airasia
+AK838
+Low Fare	
+(KUL) Kuala Lumpur
+Mon 10 Apr 2017, 1200 hrs
+(URT) Surat Thani
+Mon 10 Apr 2017, 1230 hrs
 ```
 
 ## KOH SAMUI
@@ -142,4 +186,22 @@ walking:9.5179429,100.055656,Samui Hostel|9.5256037,100.0567723,Irish Pub
 ```secret-image
 IMG_20170413_234141.jpg
 strict
+```
+
+```airasia
+FD3232
+Low Fare	
+(URT) Surat Thani
+Tue 18 Apr 2017, 0410 hrs
+(DMK) Bangkok - Don Mueang
+Tue 18 Apr 2017, 0520 hrs
+```
+
+```airasia
+FD556
+Low Fare	
+(DMK) Bangkok - Don Mueang T1
+Wed, 19 Apr 2017, 0620 hrs
+(CKG) Chongqing - T1
+Wed, 19 Apr 2017, 1010 hrs
 ```
