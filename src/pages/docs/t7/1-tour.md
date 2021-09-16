@@ -32,7 +32,7 @@ driving:13.9181208,100.6009837,A1 Bus|13.802285,100.5545711,Mo Chit|13.7440749,1
 2013-10-09,3
 ```
 
-Road racers, traffic whistle, dove and the air-conditioning.
+Racers, traffic whistle, dove and the air-conditioning.
 Noises can be heard through the sealed window of 9th floor.
 
 > _"What do you want? Sell passport? Tickets? You want silk? I'll take you to the best silk place? Diamonds? Come with me, get presents for girlfriend. Maybe no girlfriend. You want a girl, no problem. Good time. Boy girl fucking no problem..."_
