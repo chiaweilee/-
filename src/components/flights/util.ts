@@ -9,6 +9,6 @@ export const getAirport = (children: string) => {
 };
 
 export const getFlightDateTime = (children: string) => {
-  const matcher = children.match(/(0?\d|[12]\d|30|31) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (19|20)\d{2},? [012]\d:?[012345]\d (AM|PM|hrs)?/g);
-  return Array.isArray(matcher) ? matcher.map((d) => d.replace(/([012]\d):?([012345]\d) (AM|PM|hrs)?//, '$1:$2:00')) : [];
+  const matcher = children.match(/(0?\d|[12]\d|30|31) (Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) (19|20)\d{2},? [012]\d:?[012345]\d\s?(AM|PM|hrs)?/g);
+  return Array.isArray(matcher) ? matcher.map((d) => d.replace(/(\d{2})(\d{2}) hrs?/, '$1:$2:00')) : [];
 };
