@@ -6,7 +6,14 @@ Airport bus to bus station, and mini bus to park.
 
 MH2121/BKI-TWU/06-APR-2017
 ```airasia
-MH2121/(BKI)-(TWU)/Xxx 06 Apr 2017, 0000 hrs
+From: Kota Kinabalu Intl
+To: Tawau
+Flight: MH2121
+Depart: Thu, Apr 6, 07:40
+Arrive: Thu, Apr 6, 08:30
+(BKI)-(TWU)
+Xxx 06 Apr 2017, 0740 hrs
+Xxx 06 Apr 2016, 0830 hrs
 ```
 
 ```bing-map
