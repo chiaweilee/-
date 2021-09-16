@@ -8,6 +8,10 @@ Sat 04 Jan 2014, 1740 hrs ( 5:40PM)
 Sat 04 Jan 2014, 2150 hrs ( 9:50PM)
 ```
 
+```bing-map
+driving:3.1311419,101.6907174,KL Sentral|3.1413875,101.7100106,Irsia Guesthouse
+```
+
 Irsia BnB Guesthouse
 ```hotel-nights
 2014-1-4,2
