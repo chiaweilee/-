@@ -22,17 +22,6 @@ Sun 02 Apr 2017, 0930 hrs
 Sun 02 Apr 2017, 1205 hrs
 ```
 
-```airasia
-From: Kota Kinabalu Intl
-To: Tawau
-Flight: MH2121
-Depart: Thu, Apr 6, 07:40
-Arrive: Thu, Apr 6, 08:30
-(BKI)-(TWU)
-Xxx 06 Apr 2017, 0740 hrs
-Xxx 06 Apr 2016, 0830 hrs
-```
-
 ```bing-map
 driving:5.9436606,116.0487216,KKIA Terminal 2|5.9809019,116.0763801,Airport Bus Station|6.0076652,116.5425745,Mount Kinabalu National Park|6.0113287,116.5388984,Hill Lodge
 ```
