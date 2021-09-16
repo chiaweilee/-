@@ -2,6 +2,19 @@
 
 ## BANGKOK
 
+```airasia
+FD557
+
+ECONOMY PROMO
+
+Chongqing (CKG)
+Chongqing Jiangbei International Airport
+Tue 31 Mar 2015, 1110 hrs ( 11:10AM)
+Bangkok (DMK)
+Don Mueang International Airport
+Tue 31 Mar 2015, 1320 hrs ( 1:20PM)
+```
+
 ```image
 DSC0001.jpg
 ```
@@ -159,5 +172,8 @@ Cozy Coco Apartment@Phuket Airport
 2015-04-19,2
 ```
 
-
-## BANGKOK
+```airasia
+周二, 21 四月 2015	出发:	普吉岛国际机场 at 02:55	到达:	香港国际机场 客运大楼 2 at 07:30	HK Express - UO764
+Xxx 21 Apr 2015, 0255 hrs (HKT)
+Xxx 21 Apr 2015, 0730 hrs (HKG)
+```
