@@ -2,6 +2,24 @@
 
 ## BANGKOK
 
+```airasia
+FD553
+Low Fare	
+(CKG) Chongqing
+Thu 05 Jan 2017, 1955 hrs
+(DMK) Bangkok - Don Mueang
+Thu 05 Jan 2017, 2205 hrs
+```
+
+```airasia
+FD3239
+Low Fare	
+(DMK) Bangkok - Don Mueang
+Fri 06 Jan 2017, 1140 hrs
+(URT) Surat Thani
+Fri 06 Jan 2017, 1250 hrs
+```
+
 ## SURATTHANI 1
 
 Surat Thani Transport Station - Khao Lak
@@ -35,3 +53,21 @@ pubketbusterminal2.jpg
 ```
 
 ## BANGKOK
+
+```airasia
+FD3240
+Low Fare	
+URTSurat Thani
+Tue 17 Jan 2017, 1320 hrs
+DMKBangkok - Don Mueang
+Tue 17 Jan 2017, 1435 hrs
+```
+
+```airasia
+FD556
+Low Fare	
+(DMK) Bangkok - Don Mueang
+Thu 19 Jan 2017, 0620 hrs
+(CKG) Chongqing
+Thu 19 Jan 2017, 1020 hrs
+```
