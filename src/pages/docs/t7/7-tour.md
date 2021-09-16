@@ -14,6 +14,15 @@ Sun 02 Apr 2017, 0640 hrs
 ```
 
 ```airasia
+AK5106
+Low Fare	
+(KUL) Kuala Lumpur
+Sun 02 Apr 2017, 0930 hrs
+(BKI) Kota Kinabalu
+Sun 02 Apr 2017, 1205 hrs
+```
+
+```airasia
 From: Kota Kinabalu Intl
 To: Tawau
 Flight: MH2121
@@ -22,15 +31,6 @@ Arrive: Thu, Apr 6, 08:30
 (BKI)-(TWU)
 Xxx 06 Apr 2017, 0740 hrs
 Xxx 06 Apr 2016, 0830 hrs
-```
-
-```airasia
-AK5106
-Low Fare	
-(KUL) Kuala Lumpur
-Sun 02 Apr 2017, 0930 hrs
-(BKI) Kota Kinabalu
-Sun 02 Apr 2017, 1205 hrs
 ```
 
 ```bing-map
@@ -201,7 +201,7 @@ Tue 18 Apr 2017, 0520 hrs
 FD556
 Low Fare	
 (DMK) Bangkok - Don Mueang T1
-Wed, 19 Apr 2017, 0620 hrs
+Wed 19 Apr 2017, 0620 hrs
 (CKG) Chongqing - T1
-Wed, 19 Apr 2017, 1010 hrs
+Wed 19 Apr 2017, 1010 hrs
 ```
