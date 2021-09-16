@@ -1,7 +1,5 @@
 # TOUR THREE HOUSE
 
-## BANGKOK
-
 > _You are far from home._
 > _You meet a girl._
 > _It's exciting, why not?_
@@ -9,6 +7,8 @@
 > _Perhaps in hers as well._
 > _So you think something might happen; it's easy to believe, it's exciting._
 > _But she has a boyfriend so you are jealous._
+
+## BANGKOK
 
 ```airasia
 FD553
