@@ -9,7 +9,8 @@ Sat 04 Jan 2014, 2150 hrs ( 9:50PM)
 ```
 
 ```bing-map
-driving:3.1311419,101.6907174,KL Sentral|3.1413875,101.7100106,Irsia Guesthouse
+driving:3.1311419,101.6907174,KL Sentral|3.1423125,101.709513,Berjaya Times Square
+walking:3.1423125,101.709513,Berjaya Times Square|3.1413875,101.7100106,Irsia Guesthouse
 ```
 
 Irsia BnB Guesthouse
