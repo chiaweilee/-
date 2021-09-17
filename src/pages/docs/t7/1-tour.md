@@ -346,7 +346,7 @@ I just has time to enjoy the "silence" after turning air-conditioning and televi
 Then they reach the climax of their activity and fall silent.
 
 ```bing-map
-walking:13.7530194,100.5394889,Baiyoke Suite Hotel|13.8020063,100.5531415,A1 Bus
+walking:13.7530194,100.5394889,Baiyoke Suite Hotel|13.7519761,100.531616,Ratchathewi
 ```
 
 ```airasia
