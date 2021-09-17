@@ -23,13 +23,13 @@ Sun 02 Apr 2017, 1205 hrs
 ```
 
 ```bing-map
-driving:5.9436606,116.0487216,KKIA Terminal 2|5.9809019,116.0763801,Airport Bus Station|6.0076652,116.5425745,Mount Kinabalu National Park|6.0113287,116.5388984,Hill Lodge
+driving:5.9436606,116.0487216,KKIA Terminal 2|5.9809019,116.0763801,Airport Bus Station|6.0076652,116.565853,Mount Kinabalu National Park
 ```
 
 ## MOUNT KINABALU
 
 ```bing-map
-walking:6.0291003,116.5462398,Timpohon Gate|6.0589064,116.5651771,Laban Rata Resthouse|6.0752333,116.5584096,Gunung Kinabalu
+walking:6.0053195,116.5421188,Kinabalu National Park|6.0291003,116.5462398,Timpohon Gate|6.058994,116.5651771,Laban Rata Resthouse|6.075277,116.558832,Mount Kinabalu
 ```
 
 ### LOW'S PEAK
