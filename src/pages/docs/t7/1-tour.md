@@ -50,6 +50,12 @@ We drinked till the thai girl come.
 
 ### NANA
 
+### Flight
+
+```bing-map
+walking:13.7284643,100.5339654,Sala Daeng|13.7275959,100.5336985,Flight Experience
+```
+
 ### UNNIE
 
 > _I was traveling alone for two
