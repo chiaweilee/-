@@ -29,7 +29,8 @@ driving:5.9436606,116.0487216,KKIA Terminal 2|5.9809019,116.0763801,Airport Bus 
 ## MOUNT KINABALU
 
 ```bing-map
-walking:6.0053195,116.5421188,Kinabalu National Park|6.0291003,116.5462398,Timpohon Gate|6.058994,116.5651771,Laban Rata Resthouse|6.075277,116.558832,Mount Kinabalu
+walking:6.0053195,116.5421188,Kinabalu National Park|6.0291003,116.5462398,Timpohon Gate
+points:6.058994,116.5651771,Laban Rata Resthouse|6.075277,116.558832,Mount Kinabalu
 ```
 
 ### LOW'S PEAK
