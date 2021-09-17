@@ -216,8 +216,8 @@ self.__precacheManifest = [
     "url": "/home/p__docs__study__02382.md.d10521dc.async.js"
   },
   {
-    "revision": "639571026dfab2265964",
-    "url": "/home/p__docs__study__02384.md.76e6b937.async.js"
+    "revision": "f3b30c38a474d39ca6f9",
+    "url": "/home/p__docs__study__02384.md.5a802ed0.async.js"
   },
   {
     "revision": "d24a22948fece7d4efdd",
@@ -288,19 +288,19 @@ self.__precacheManifest = [
     "url": "/home/p__index.7c17dfa2.async.js"
   },
   {
-    "revision": "0d56408608995455a498",
+    "revision": "09b5e9127bb7a9066fb7",
     "url": "/home/umi.fb6dcd73.css"
   },
   {
-    "revision": "0d56408608995455a498",
-    "url": "/home/umi.736e2f2e.js"
+    "revision": "09b5e9127bb7a9066fb7",
+    "url": "/home/umi.5e935220.js"
   },
   {
     "revision": "b8c5da45f21e815b10fc8fbebf048e0a",
     "url": "/home/static/Career.b8c5da45.ttf"
   },
   {
-    "revision": "489a142805e1fa0a131808b76c5797ba",
+    "revision": "7f8215973089c314fe365eb3aadbd600",
     "url": "/home/index.html"
   },
   {
@@ -316,14 +316,6 @@ self.__precacheManifest = [
     "url": "/home/assets/00002032.webp"
   },
   {
-    "revision": "338bb45067ea9afb1596cfcee8519be5",
-    "url": "/home/assets/00002032.jpg"
-  },
-  {
-    "revision": "0f041713dd9cc0423efdfc7c33a291fd",
-    "url": "/home/assets/00002034.jpg"
-  },
-  {
     "revision": "98ae7f1413e77d0d384f9ec52d295b46",
     "url": "/home/assets/00002369.webp"
   },
@@ -332,32 +324,40 @@ self.__precacheManifest = [
     "url": "/home/assets/00003135.webp"
   },
   {
+    "revision": "0f041713dd9cc0423efdfc7c33a291fd",
+    "url": "/home/assets/00002034.jpg"
+  },
+  {
+    "revision": "338bb45067ea9afb1596cfcee8519be5",
+    "url": "/home/assets/00002032.jpg"
+  },
+  {
     "revision": "b553ba823f7ac4caeda0c6061c57ca4d",
     "url": "/home/assets/00003180.webp"
-  },
-  {
-    "revision": "3c99ac39a98055b0319a0c7ef0f81417",
-    "url": "/home/assets/00005170-0001.webp"
-  },
-  {
-    "revision": "56f48c22a12fca347bdba054f67ff6ee",
-    "url": "/home/assets/00003135.jpg"
   },
   {
     "revision": "250c9d12fa311e916fc45b3439e3598e",
     "url": "/home/assets/00003434.webp"
   },
   {
+    "revision": "56f48c22a12fca347bdba054f67ff6ee",
+    "url": "/home/assets/00003135.jpg"
+  },
+  {
+    "revision": "3c99ac39a98055b0319a0c7ef0f81417",
+    "url": "/home/assets/00005170-0001.webp"
+  },
+  {
     "revision": "32908f7406757f5ac31c42bf5cfa7a67",
     "url": "/home/assets/00008507.webp"
   },
   {
-    "revision": "7fb6ff34bedaa7b1c2f6fea5a9dab4fc",
-    "url": "/home/assets/00009150.webp"
-  },
-  {
     "revision": "75a24160c130797b1e7436aec37e7979",
     "url": "/home/assets/00005170-0001.jpg"
+  },
+  {
+    "revision": "7fb6ff34bedaa7b1c2f6fea5a9dab4fc",
+    "url": "/home/assets/00009150.webp"
   },
   {
     "revision": "a38b41d1f8e99b88af7ae0e68bdeda5a",
@@ -368,32 +368,28 @@ self.__precacheManifest = [
     "url": "/home/assets/00009518.webp"
   },
   {
-    "revision": "ef66947258591f729ed3108a7d39740f",
-    "url": "/home/assets/00023183.webp"
-  },
-  {
     "revision": "7bd47324eecee24753eaaaa65d93ee26",
     "url": "/home/assets/00009523.webp"
   },
   {
-    "revision": "e8a06f0e0ecc0c311b34ded030a4986c",
-    "url": "/home/assets/00023184.webp"
+    "revision": "ef66947258591f729ed3108a7d39740f",
+    "url": "/home/assets/00023183.webp"
   },
   {
     "revision": "cd4c8bf9818443941e26c798b1ce2a8a",
     "url": "/home/assets/00023265.webp"
   },
   {
-    "revision": "4bce379ca8d83d31acbfaf769ec54df0",
-    "url": "/home/assets/00023266.webp"
+    "revision": "e8a06f0e0ecc0c311b34ded030a4986c",
+    "url": "/home/assets/00023184.webp"
   },
   {
     "revision": "ae426b02c132250fd545dc4f636838b5",
     "url": "/home/assets/00023184.jpg"
   },
   {
-    "revision": "9246e984277dd1aae0b7fd121aee502b",
-    "url": "/home/assets/00023265.jpg"
+    "revision": "4bce379ca8d83d31acbfaf769ec54df0",
+    "url": "/home/assets/00023266.webp"
   },
   {
     "revision": "8fc7f20ba254cded5ddd08e08634fd59",
@@ -408,12 +404,8 @@ self.__precacheManifest = [
     "url": "/home/assets/00023266.jpg"
   },
   {
-    "revision": "d1576522587724d04253272febc9c5df",
-    "url": "/home/assets/12940195_946079962178994_1559689102_n.jpg"
-  },
-  {
-    "revision": "ae0afc5c83b0986131e58610467d2d0c",
-    "url": "/home/assets/1611158680144.webp"
+    "revision": "9246e984277dd1aae0b7fd121aee502b",
+    "url": "/home/assets/00023265.jpg"
   },
   {
     "revision": "08c326afc60a24220381f0f7c0abbd0a",
@@ -424,8 +416,12 @@ self.__precacheManifest = [
     "url": "/home/assets/00025100-0002.jpg"
   },
   {
-    "revision": "81c1732b02a8f6e87fdc81ccedeeb0a6",
-    "url": "/home/assets/1611278053015.webp"
+    "revision": "ae0afc5c83b0986131e58610467d2d0c",
+    "url": "/home/assets/1611158680144.webp"
+  },
+  {
+    "revision": "d1576522587724d04253272febc9c5df",
+    "url": "/home/assets/12940195_946079962178994_1559689102_n.jpg"
   },
   {
     "revision": "533cf13ceac6513b55aeaedabb21e941",
@@ -436,16 +432,20 @@ self.__precacheManifest = [
     "url": "/home/assets/1611158680144.jpg"
   },
   {
-    "revision": "7bac6aa1aff375ee19e920122c570809",
-    "url": "/home/assets/19120471_661258937398565_3756030448896049152_n.jpg"
-  },
-  {
     "revision": "678ed727992c5ee4153f165303ca1fb7",
     "url": "/home/assets/1611500484268.jpg"
   },
   {
+    "revision": "7bac6aa1aff375ee19e920122c570809",
+    "url": "/home/assets/19120471_661258937398565_3756030448896049152_n.jpg"
+  },
+  {
     "revision": "d3428bbfc226dc6c335337796e6186f1",
     "url": "/home/assets/19120471_661258937398565_3756030448896049152_n.webp"
+  },
+  {
+    "revision": "81c1732b02a8f6e87fdc81ccedeeb0a6",
+    "url": "/home/assets/1611278053015.webp"
   },
   {
     "revision": "d69f3036cf4a8dec0b1199842214de5f",
@@ -460,20 +460,20 @@ self.__precacheManifest = [
     "url": "/home/assets/crystal.webp"
   },
   {
-    "revision": "1cb21c96b8db3271ea025613c7f68c05",
-    "url": "/home/assets/bkk.webp"
-  },
-  {
     "revision": "9a37ede382fb2d4d2c5b9be9c0b1d981",
     "url": "/home/assets/dd.webp"
   },
   {
-    "revision": "98bd583b6b99bf27a5b479b313bde0ee",
-    "url": "/home/assets/DSC0001.webp"
+    "revision": "1cb21c96b8db3271ea025613c7f68c05",
+    "url": "/home/assets/bkk.webp"
   },
   {
     "revision": "668fde5019953f035a2dfb3749108c10",
     "url": "/home/assets/DSC2996.webp"
+  },
+  {
+    "revision": "98bd583b6b99bf27a5b479b313bde0ee",
+    "url": "/home/assets/DSC0001.webp"
   },
   {
     "revision": "0528f7bed188b73bf39e92f8ac2b5287",
@@ -524,16 +524,16 @@ self.__precacheManifest = [
     "url": "/home/assets/klcc.webp"
   },
   {
+    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
+    "url": "/home/assets/latu.jpg"
+  },
+  {
     "revision": "0bda543b66e83159e0bdf86595e7c1c6",
     "url": "/home/assets/latu.webp"
   },
   {
     "revision": "9f0298866a08cfb4c0b078a9950091c2",
     "url": "/home/assets/mabul-1.webp"
-  },
-  {
-    "revision": "2bd32caa31baa9ddac4ad8eb68c498d8",
-    "url": "/home/assets/latu.jpg"
   },
   {
     "revision": "59a0d581a098e81bd69ecb3c010aafbc",
@@ -580,40 +580,40 @@ self.__precacheManifest = [
     "url": "/home/assets/pubketbusterminal2.jpg"
   },
   {
-    "revision": "920b52f4b541f33a2020dea5a0a3c938",
-    "url": "/home/assets/s1.webp"
-  },
-  {
     "revision": "1561818ac6729095e2fc1be550e3e23e",
     "url": "/home/assets/s1.jpg"
   },
   {
-    "revision": "891d67c99edd598f6478ac32217117b5",
-    "url": "/home/assets/s2.webp"
+    "revision": "920b52f4b541f33a2020dea5a0a3c938",
+    "url": "/home/assets/s1.webp"
   },
   {
     "revision": "6a7dbd0714c3a04cae2b3195a54dc4f9",
     "url": "/home/assets/pubketbusterminal2.webp"
   },
   {
-    "revision": "f601b47d646d73461fef77f5a95e1040",
-    "url": "/home/assets/s3.webp"
+    "revision": "891d67c99edd598f6478ac32217117b5",
+    "url": "/home/assets/s2.webp"
   },
   {
-    "revision": "34edf69317d6c796d55b2278e0465a68",
-    "url": "/home/assets/s4.webp"
+    "revision": "f601b47d646d73461fef77f5a95e1040",
+    "url": "/home/assets/s3.webp"
   },
   {
     "revision": "5fad454bb051b2fd95c12c112b3d4095",
     "url": "/home/assets/s5.webp"
   },
   {
-    "revision": "3381074177bc97d3daac86ea18b2c85c",
-    "url": "/home/assets/sara.jpg"
+    "revision": "34edf69317d6c796d55b2278e0465a68",
+    "url": "/home/assets/s4.webp"
   },
   {
     "revision": "102a4d1b3dbe3a639b8704a955d259ed",
     "url": "/home/assets/s6.webp"
+  },
+  {
+    "revision": "3381074177bc97d3daac86ea18b2c85c",
+    "url": "/home/assets/sara.jpg"
   },
   {
     "revision": "47e6152a5e39cf75feba6776721e3141",
@@ -648,24 +648,20 @@ self.__precacheManifest = [
     "url": "/home/assets/00002026.jpg"
   },
   {
-    "revision": "3c21cee552678c528c36183d866bae6c",
-    "url": "/home/assets/00003180.jpg"
-  },
-  {
     "revision": "4b9a523bd1a12743d1fba1993ebb8653",
     "url": "/home/assets/00003434.jpg"
   },
   {
-    "revision": "a66499239b8cd462846eebacc735fa34",
-    "url": "/home/assets/00002369.jpg"
-  },
-  {
-    "revision": "52617b5dabe63ae2351dbe45e8a11601",
-    "url": "/home/assets/00008507.jpg"
+    "revision": "3c21cee552678c528c36183d866bae6c",
+    "url": "/home/assets/00003180.jpg"
   },
   {
     "revision": "f0bf5175863ee5f10bc30ad000025189",
     "url": "/home/assets/00009518.jpg"
+  },
+  {
+    "revision": "a66499239b8cd462846eebacc735fa34",
+    "url": "/home/assets/00002369.jpg"
   },
   {
     "revision": "79454878d7d1358c8ecffefec9e0b36e",
@@ -678,6 +674,10 @@ self.__precacheManifest = [
   {
     "revision": "c2d97266d2195c83485fe1cd07b246f9",
     "url": "/home/assets/00009213.jpg"
+  },
+  {
+    "revision": "52617b5dabe63ae2351dbe45e8a11601",
+    "url": "/home/assets/00008507.jpg"
   },
   {
     "revision": "177b1db0003dc6897319eec140fcd1df",
@@ -720,16 +720,16 @@ self.__precacheManifest = [
     "url": "/home/assets/mabul-2.jpg"
   },
   {
-    "revision": "7621b271db28a211f48f511f5836800a",
-    "url": "/home/assets/klcc.jpg"
+    "revision": "f9d82a9060ce623814826fd2ab495626",
+    "url": "/home/assets/mmexport1611412061154.jpg"
   },
   {
     "revision": "1b43f99386a4c1e597b6d461c454655a",
     "url": "/home/assets/mn-1.jpg"
   },
   {
-    "revision": "f9d82a9060ce623814826fd2ab495626",
-    "url": "/home/assets/mmexport1611412061154.jpg"
+    "revision": "7621b271db28a211f48f511f5836800a",
+    "url": "/home/assets/klcc.jpg"
   },
   {
     "revision": "6a6a95bcf9ed06e4be2a309eacec72e8",
@@ -760,14 +760,6 @@ self.__precacheManifest = [
     "url": "/home/assets/s5.jpg"
   },
   {
-    "revision": "53f5f1378c61df6755c79e99e28b58e0",
-    "url": "/home/assets/treehouse-3.jpg"
-  },
-  {
-    "revision": "831b98587024ceb1bcd0f844ae0b7473",
-    "url": "/home/assets/vicky-fish.jpg"
-  },
-  {
     "revision": "c3b00e842c61cd391e51168f072f8205",
     "url": "/home/assets/treehouse-1.jpg"
   },
@@ -776,12 +768,20 @@ self.__precacheManifest = [
     "url": "/home/assets/treehouse-2.jpg"
   },
   {
-    "revision": "4ff33f9b4af3d3023d10750fe3868305",
-    "url": "/home/assets/treehouse-4.jpg"
+    "revision": "53f5f1378c61df6755c79e99e28b58e0",
+    "url": "/home/assets/treehouse-3.jpg"
+  },
+  {
+    "revision": "831b98587024ceb1bcd0f844ae0b7473",
+    "url": "/home/assets/vicky-fish.jpg"
   },
   {
     "revision": "bc997d065be344c8380659ff11aebbc0",
     "url": "/home/assets/vicky-fish.png"
+  },
+  {
+    "revision": "4ff33f9b4af3d3023d10750fe3868305",
+    "url": "/home/assets/treehouse-4.jpg"
   },
   {
     "revision": "f6d09eb9cdec0f79fa7f0429f85c5466",
@@ -796,16 +796,16 @@ self.__precacheManifest = [
     "url": "/home/assets/bitch.jpg.json"
   },
   {
-    "revision": "ade46e190ba6e8cca3f129eca04f7153",
-    "url": "/home/assets/DSC3280.jpg"
+    "revision": "670e500b4e1f45b65da15bdd739afe35",
+    "url": "/home/assets/DSC3276.jpg"
   },
   {
     "revision": "5af81f3bc1b9a0a2ab89cb5ce9446d19",
     "url": "/home/assets/DSC3279.jpg"
   },
   {
-    "revision": "670e500b4e1f45b65da15bdd739afe35",
-    "url": "/home/assets/DSC3276.jpg"
+    "revision": "ade46e190ba6e8cca3f129eca04f7153",
+    "url": "/home/assets/DSC3280.jpg"
   },
   {
     "revision": "e3b26959644620f71620616a9351c4dc",
@@ -820,12 +820,12 @@ self.__precacheManifest = [
     "url": "/home/assets/kohtao1.jpg.json"
   },
   {
-    "revision": "ffc0041a200c906f93b91906be325df6",
-    "url": "/home/assets/IMG_20170413_234141.jpg.json"
-  },
-  {
     "revision": "5d488e0e030cfd18302f1d1dd6af44d9",
     "url": "/home/assets/2015-04-08-120444.jpg.json"
+  },
+  {
+    "revision": "ffc0041a200c906f93b91906be325df6",
+    "url": "/home/assets/IMG_20170413_234141.jpg.json"
   },
   {
     "revision": "c5b9d4791089367eb75b44f2338908e8",
