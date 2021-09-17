@@ -68,6 +68,10 @@ I felt acutely at that moment,
 there was no one who wanted to go
 with me._
 
+```bing-map
+walking:13.7377986,100.5171146,Hua Lamphong|13.7408755,100.5175149,.|13.7423625,100.5064562,China Town
+```
+
 ```secret
 2e3be1d8b2fc71b70e0d217aa09cd34979b0b17574
 ```
