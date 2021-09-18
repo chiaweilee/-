@@ -129,6 +129,8 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
           );
         });
         directionsManager.setRenderOptions({
+          displayManeuverIcons: false,
+          displayRouteSelector: false,
           itineraryContainer: document.getElementById('printoutPanel'),
         });
         directionsManager.calculateDirections();
