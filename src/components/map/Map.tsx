@@ -118,6 +118,8 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
       Microsoft.Maps.loadModule('Microsoft.Maps.Directions', () => {
         const directionsManager = new Microsoft.Maps.Directions.DirectionsManager(this.map);
         directionsManager.setRequestOptions({
+          maxRoutes: 1,
+          routeDraggable: false,
           routeMode: Microsoft.Maps.Directions.RouteMode[type],
         });
         route.forEach(({ address, latitude, longitude }) => {
@@ -129,8 +131,6 @@ export default class extends React.PureComponent<IMapProps & typeof defaultProps
           );
         });
         directionsManager.setRenderOptions({
-          displayManeuverIcons: false,
-          displayRouteSelector: false,
           itineraryContainer: document.getElementById('printoutPanel'),
         });
         directionsManager.calculateDirections();
